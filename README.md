@@ -32,3 +32,9 @@ Then open http://localhost:8000.
 ## Design
 
 Built with the [SURF Design System](https://github.com/surf-ori/surf-design-system), loaded from `surf-ori.github.io/surf-design-system`. Light and dark theme follow the system setting, with a toggle in the top bar.
+
+## License
+
+This project is licensed under the [European Union Public Licence v1.2](LICENSE) (EUPL-1.2).
+
+Third-party parts keep their own licences: `assets/vendor/marked-12.0.2.min.js` is MIT ([licence](assets/vendor/marked-LICENSE.md)), and the SURF logo and pictograms in `assets/` come from the [SURF Design System](https://github.com/surf-ori/surf-design-system). The linked reports and slides on Zenodo carry the licences stated there.
