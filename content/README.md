@@ -31,6 +31,7 @@ The hero also takes `image`, `image2`, `image-alt` and `image2-alt`.
   icon: research-20          # a SURF pictogram from assets/icons/
   tags: In production, Open source
   number: 1                  # a big number instead of an icon
+  date: April 2026           # a date instead of an icon (for articles)
   ```
 
 - `![alt text](assets/img/file.jpg)` in a card becomes the card image. Paths are relative to the site root.

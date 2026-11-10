@@ -13,4 +13,4 @@ https://video.edu.nl/w/gFEVJXpJ2k6L31LAzWUqmF
 
 - [Download the slides](https://doi.org/10.5281/zenodo.23686369)
 - [Watch on video.edu.nl](https://video.edu.nl/w/gFEVJXpJ2k6L31LAzWUqmF)
-- [Read the project story](https://communities.surf.nl/en/open-research-information/article/from-pid-to-portal-strengthening-the-open-research-information)
+- [Read the kick-off story](https://communities.surf.nl/en/open-research-information/article/from-pid-to-portal-strengthening-the-open-research-information)

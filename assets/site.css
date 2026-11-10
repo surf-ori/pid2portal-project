@@ -134,6 +134,7 @@ code { font-family: var(--font-mono); font-size: 0.9em; }
 .card-grid { --cols: 3; display: grid; grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); gap: var(--space-5); }
 .layout-cards#about .card-grid { --cols: 2; }
 @media (max-width: 1040px) { .card-grid { --cols: 2 !important; } }
+@media (min-width: 1041px) and (max-width: 1180px) { #stories .card-grid { --cols: 3 !important; } }
 @media (max-width: 680px)  { .card-grid { --cols: 1 !important; } }
 
 .card.deliverable {
@@ -158,6 +159,11 @@ code { font-family: var(--font-mono); font-size: 0.9em; }
 .card-media-icon img.pictogram-lg { width: 112px; height: 112px; object-fit: contain; }
 .pictogram { width: 48px; height: 48px; object-fit: contain; }
 [data-theme="dark"] .pictogram { filter: invert(1); }
+.card-date { font-size: var(--fs-caption); font-weight: var(--weight-semibold); color: var(--fg-3); letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+#stories .card-body { padding: var(--space-4); }
+#stories .card-body h3 { font-size: var(--fs-h6); }
+#stories .card-body > p { font-size: var(--fs-body-sm); }
+#stories .card-top { min-height: 0; margin-bottom: var(--space-3); }
 .card-number { font-family: var(--font-display); font-weight: 900; font-size: 56px; line-height: 1; color: var(--surf-orange); }
 
 .tags { display: flex; flex-wrap: wrap; gap: var(--space-1); justify-content: flex-end; }

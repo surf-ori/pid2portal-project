@@ -33,6 +33,7 @@ A data lake on a public tech stack (DuckLake, Parquet and S3) on SURF storage in
 - [Data overview](http://surf-ori.github.io/ducklake-overview)
 - [Code: external → staging → bronze](https://github.com/surf-ori/sprouts)
 - [Code: bronze → silver → gold](https://github.com/surf-ori/pid2portal)
+- [Read the blog](https://communities.surf.nl/en/open-research-information/article/behind-the-scenes-experimenting-with-a-next-gen-ori-data-0)
 
 ### ORI framework report
 
@@ -44,6 +45,7 @@ tags: Report, Deliverable A1
 Which use cases matter most to Dutch institutions, and which metadata do they need? Based on 14 use cases from 10 organisations, grouped into reporting, assessment and analysis. The verdict: improve three elements first. **DOIs** (also for grey literature), **ROR** for institutions and **ORCID** for people.
 
 - [Read the report](https://doi.org/10.5281/zenodo.18667698)
+- [Read the blog](https://communities.surf.nl/en/open-research-information/article/introducing-the-ori-monitoring-framework-a-starting-point-for)
 
 ### ORI metrics report
 
@@ -66,6 +68,7 @@ tags: Extra, Open source
 Ask a question in plain language and get a working SQL query on the data lake. Skills and an MCP server let AI agents find their way through the complex data structures, so non-technical users can query the data transparently.
 
 - [Read the documentation](https://github.com/surf-ori/agentic-tools)
+- [Read the blog](https://communities.surf.nl/en/open-research-information/article/talk-to-our-open-research-information-introducing-ori-agentic)
 
 ### ORI AI crash course
 
