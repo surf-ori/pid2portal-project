@@ -1,0 +1,283 @@
+/* SURF Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --surf-orange: #e67300;
+  --surf-black: #000000;
+  --surf-grey: #cccccc;
+  --surf-orange-700: #b85b00;
+  --surf-orange-500: #e67300;
+  --surf-orange-300: #f4a95a;
+  --surf-orange-200: #f9c892;
+  --surf-orange-100: #fce4c8;
+  --surf-orange-050: #fff3e3;
+  --surf-red: #df3226;
+  --surf-yellow: #fedb00;
+  --surf-blue: #0077c0;
+  --surf-green-dark: #008942;
+  --surf-green-light: #b8e3c9;
+  --surf-purple: #772583;
+  --surf-orange-a80: rgba(230, 115, 0, 0.8);
+  --surf-red-a80: rgba(223, 50, 38, 0.8);
+  --surf-yellow-a80: rgba(254, 219, 0, 0.8);
+  --surf-blue-a80: rgba(0, 119, 192, 0.8);
+  --surf-green-dk-a80: rgba(0, 137, 66, 0.8);
+  --surf-green-lt-a80: rgba(184, 227, 201, 0.8);
+  --surf-purple-a80: rgba(119, 37, 131, 0.8);
+  --surf-bg: #ffffff;
+  --surf-bg-soft: #f5f5f5;
+  --surf-bg-muted: #ececec;
+  --surf-border: #d9d9d9;
+  --surf-border-soft: #ececec;
+  --fg-1: var(--surf-black);
+  --fg-2: #3a3a3a;
+  --fg-3: #6b6b6b;
+  --fg-inverse: #ffffff;
+  --fg-accent: var(--surf-orange);
+  --fg-accent-strong: var(--surf-orange-700);
+  --fg-on-accent: #ffffff;
+  --fg-warning: var(--surf-orange-700);
+  --bg-1: var(--surf-bg);
+  --bg-2: var(--surf-bg-soft);
+  --bg-3: var(--surf-bg-muted);
+  --bg-accent: var(--surf-orange);
+  --bg-accent-soft: var(--surf-orange-050);
+  --bg-inverse: var(--surf-black);
+  --border-1: var(--surf-border);
+  --border-2: var(--surf-border-soft);
+  --status-success: var(--surf-green-dark);
+  --status-info: var(--surf-blue);
+  --status-warning: var(--surf-yellow);
+  --status-error: var(--surf-red);
+  --tone-orange-bg: #fff3e3;
+  --tone-orange-fg: #b85b00;
+  --tone-blue-bg: #e3f1fb;
+  --tone-blue-fg: #005e99;
+  --tone-green-bg: #e5f4ea;
+  --tone-green-fg: #006b33;
+  --tone-red-bg: #fde9e7;
+  --tone-red-fg: #b5241a;
+  --tone-purple-bg: #f2e6f4;
+  --tone-purple-fg: #772583;
+  --tone-yellow-bg: #fff8dc;
+  --tone-yellow-fg: #735900;
+  --curve-background: #ffffff;
+  --curve-foreground: #0a0a0a;
+  --curve-card: #ffffff;
+  --curve-card-foreground: #0c0a09;
+  --curve-primary: #064bcb;
+  --curve-primary-strong: #053eaa;
+  --curve-primary-foreground: #ffffff;
+  --curve-secondary: #d5e2fa;
+  --curve-secondary-foreground: #000000;
+  --curve-muted: #f5f5f4;
+  --curve-muted-foreground: #525252;
+  --curve-accent: #eaf0fc;
+  --curve-accent-foreground: #171717;
+  --curve-destructive: #b91c1c;
+  --curve-destructive-foreground: #fef2f2;
+  --curve-border: #d6d3d1;
+  --curve-border-subtle: rgba(0, 0, 0, 0.06);
+  --curve-border-strong: #737373;
+  --curve-input: #d4d4d4;
+  --curve-placeholder: #737373;
+  --curve-ring: #064bcb;
+  --curve-info: #043286;
+  --curve-info-hover: #053eaa;
+  --curve-info-foreground: #ffffff;
+  --curve-info-subtle: #eaf0fc;
+  --curve-info-subtle-foreground: #043286;
+  --curve-success: #01653d;
+  --curve-success-hover: #028752;
+  --curve-success-foreground: #ffffff;
+  --curve-success-subtle: #ddfdf0;
+  --curve-success-subtle-foreground: #01653d;
+  --curve-warning: #ffeb75;
+  --curve-warning-hover: #ffe84a;
+  --curve-warning-foreground: #3a3200;
+  --curve-warning-subtle: #fff7ca;
+  --curve-warning-subtle-foreground: #9f4a1a;
+  --curve-danger: #a02721;
+  --curve-danger-hover: #83201b;
+  --curve-danger-foreground: #ffffff;
+  --curve-danger-subtle: #ffe0de;
+  --curve-danger-subtle-foreground: #bd2f27;
+  --curve-chart-1: #ea580c;
+  --curve-chart-2: #0d9488;
+  --curve-chart-3: #164e63;
+  --curve-chart-4: #fbbf24;
+  --curve-chart-5: #f59e0b;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+  --curve-shadow-xs: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --curve-shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+  --curve-shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --curve-shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+}
+[data-theme="dark"] {
+  --surf-bg: #121212;
+  --surf-bg-soft: #1b1b1b;
+  --surf-bg-muted: #262626;
+  --surf-border: #6e6e6e;
+  --surf-border-soft: #2e2e2e;
+  --fg-1: #f5f5f5;
+  --fg-2: #d4d4d4;
+  --fg-3: #a3a3a3;
+  --fg-inverse: #000000;
+  --fg-accent-strong: #ffa04d;
+  --fg-on-accent: #000000;
+  --fg-warning: var(--surf-yellow);
+  --bg-accent-soft: #2b1d0e;
+  --bg-inverse: #f5f5f5;
+  --status-success: #4cc585;
+  --status-info: #5bb0ea;
+  --status-error: #f4807b;
+  --tone-orange-bg: #3a2410;
+  --tone-orange-fg: #ffb36b;
+  --tone-blue-bg: #0e2a3d;
+  --tone-blue-fg: #8cc8f0;
+  --tone-green-bg: #0f2e1d;
+  --tone-green-fg: #7fd6a4;
+  --tone-red-bg: #3d1714;
+  --tone-red-fg: #f5a29b;
+  --tone-purple-bg: #321536;
+  --tone-purple-fg: #d9a3de;
+  --tone-yellow-bg: #332b00;
+  --tone-yellow-fg: #f6dc5c;
+  --curve-background: #0a0a0a;
+  --curve-foreground: #fafafa;
+  --curve-card: #171717;
+  --curve-card-foreground: #fafafa;
+  --curve-primary: #053eaa;
+  --curve-primary-strong: #6e9ae8;
+  --curve-primary-foreground: #ffffff;
+  --curve-secondary: #032561;
+  --curve-secondary-foreground: #ffffff;
+  --curve-muted: #262626;
+  --curve-muted-foreground: #d4d4d4;
+  --curve-accent: #032561;
+  --curve-accent-foreground: #fafafa;
+  --curve-destructive: #f87171;
+  --curve-destructive-foreground: #450a0a;
+  --curve-border: rgba(255, 255, 255, 0.1);
+  --curve-border-subtle: rgba(255, 255, 255, 0.06);
+  --curve-border-strong: #a3a3a3;
+  --curve-input: #737373;
+  --curve-placeholder: #a3a3a3;
+  --curve-ring: #053eaa;
+  --curve-info: #6e9ae8;
+  --curve-info-hover: #064bcb;
+  --curve-info-foreground: #000000;
+  --curve-info-subtle: #043286;
+  --curve-info-subtle-foreground: #eaf0fc;
+  --curve-success: #00d37f;
+  --curve-success-hover: #03ab68;
+  --curve-success-foreground: #000000;
+  --curve-success-subtle: #01653d;
+  --curve-success-subtle-foreground: #ddfdf0;
+  --curve-warning: #ffb180;
+  --curve-warning-hover: #ff9959;
+  --curve-warning-foreground: #000000;
+  --curve-warning-subtle: #733412;
+  --curve-warning-subtle-foreground: #ffe9d9;
+  --curve-danger: #ed827c;
+  --curve-danger-hover: #ed827c;
+  --curve-danger-foreground: #000000;
+  --curve-danger-subtle: #721c18;
+  --curve-danger-subtle-foreground: #ffe0de;
+  --curve-chart-1: #1d4ed8;
+  --curve-chart-2: #10b981;
+  --curve-chart-3: #f59e0b;
+  --curve-chart-4: #a855f7;
+  --curve-chart-5: #f43f5e;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.5);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.6);
+}
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+  --curve-radius-xs: 2px;
+  --curve-radius-sm: 6px;
+  --curve-radius-md: 8px;
+  --curve-radius-lg: 10px;
+  --curve-radius-xl: 14px;
+  --curve-radius-2xl: 18px;
+  --border-thin: 1px;
+  --border-base: 2px;
+  --border-thick: 4px;
+  --fs-display: clamp(48px, 6vw, 80px);
+  --fs-h1: clamp(36px, 4vw, 56px);
+  --fs-h2: clamp(28px, 3vw, 40px);
+  --fs-h3: 24px;
+  --fs-h4: 20px;
+  --fs-h5: 18px;
+  --fs-h6: 16px;
+  --fs-body-lg: 19px;
+  --fs-body: 17px;
+  --fs-body-sm: 15px;
+  --fs-caption: 13px;
+  --fs-mono: 14px;
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-loose: 1.7;
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-xbold: 800;
+  --font-display: "Nunito", "Nunito Sans", system-ui, sans-serif;
+  --font-body: "Source Sans Pro", "Source Sans 3", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-curve-sans: "Source Sans 3", "Source Sans Pro", sans-serif;
+  --font-curve-mono: "Geist Mono", ui-monospace, monospace;
+}
+.h-display { font-family: var(--font-display); font-size: 80px; line-height: 1.1; font-weight: 900; letter-spacing: -0.01em; }
+.h1 { font-family: var(--font-display); font-size: 56px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em; }
+.h2 { font-family: var(--font-display); font-size: 40px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em; }
+.h3 { font-family: var(--font-display); font-size: 24px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em; }
+.h4 { font-family: var(--font-display); font-size: 20px; line-height: 1.1; font-weight: 700; letter-spacing: -0.01em; }
+.h5 { font-family: var(--font-display); font-size: 18px; line-height: 1.1; font-weight: 700; letter-spacing: -0.01em; }
+.h6 { font-family: var(--font-display); font-size: 16px; line-height: 1.1; font-weight: 700; letter-spacing: -0.01em; }
+.p-lg { font-family: var(--font-body); font-size: 19px; line-height: 1.5; font-weight: 400; }
+.p { font-family: var(--font-body); font-size: 17px; line-height: 1.5; font-weight: 400; }
+.p-sm { font-family: var(--font-body); font-size: 15px; line-height: 1.5; font-weight: 400; }
+.caption { font-family: var(--font-body); font-size: 13px; line-height: 1.25; font-weight: 400; }
+.eyebrow { font-family: var(--font-body); font-size: 13px; line-height: 1.25; font-weight: 600; letter-spacing: 0.04em; }
+.mono { font-family: var(--font-mono); font-size: 14px; line-height: 1.5; font-weight: 400; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-VariableFont_wght.ttf"); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-Italic-VariableFont_wght.ttf"); font-weight: 200 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-ExtraLight.ttf"); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-ExtraLightItalic.ttf"); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-Light.ttf"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-LightItalic.ttf"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-Regular.ttf"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-Italic.ttf"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-SemiBold.ttf"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-SemiBoldItalic.ttf"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-Bold.ttf"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-BoldItalic.ttf"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-Black.ttf"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans Pro"; src: url("fonts/SourceSansPro-BlackItalic.ttf"); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/SourceSans3-VariableFont_wght.ttf"); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/SourceSans3-Italic-VariableFont_wght.ttf"); font-weight: 200 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("fonts/GeistMono-VariableFont_wght.ttf"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("fonts/GeistMono-Italic-VariableFont_wght.ttf"); font-weight: 100 900; font-style: italic; font-display: swap; }
