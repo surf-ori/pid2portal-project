@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PID2Portal</title>
+<meta name="description" content="PID2Portal (PID to Portal): better Dutch open research information, from persistent identifier to research portal. A SURF project funded by Universities of the Netherlands, 2025–2026.">
+<meta property="og:title" content="PID2Portal: from PID to Portal">
+<meta property="og:description" content="An ORI data quality dashboard, an open data lake, two reports and the Netherlands Research Portal. See what we built and put it to work.">
+<meta property="og:image" content="https://surf-ori.github.io/pid2portal-project/assets/img/ori-dashboard.jpg">
+<meta property="og:type" content="website">
+
+<!-- SURF Design System: theme script first (no flash of the wrong theme), then tokens, Oat + SURF theme, Oat's script. -->
+<script src="https://surf-ori.github.io/surf-design-system/components/lib/surf-theme.js"></script>
+<script>window.SURFTheme && SURFTheme.init()</script>
+<link rel="stylesheet" href="https://surf-ori.github.io/surf-design-system/tokens.css">
+<link rel="stylesheet" href="https://surf-ori.github.io/surf-design-system/components/bundle.css">
+<script src="https://surf-ori.github.io/surf-design-system/components/lib/oat.min.js" defer></script>
+
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/img/surf-logo.svg">
+
+<script src="assets/vendor/marked-12.0.2.min.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top" aria-label="PID2Portal, back to top">
+      <img class="logo logo-light" src="assets/img/surf-logo.svg" alt="SURF">
+      <img class="logo logo-dark" src="assets/img/SURF_diap.svg" alt="SURF">
+      <span class="brand-name">PID2Portal</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <surf-theme-toggle compact label-light="Light" label-system="System" label-dark="Dark"></surf-theme-toggle>
+  </div>
+</header>
+
+<main id="main">
+  <div id="top"></div>
+  <div id="sections" aria-live="polite">
+    <p class="loading">Loading…</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img class="footer-logo" src="assets/img/SURF_diap.svg" alt="SURF">
+    <div id="footer" class="footer-text"></div>
+  </div>
+</footer>
+
+<noscript><div class="wrap"><p>This page needs JavaScript to render its content. The texts are also readable on GitHub in the <a href="https://github.com/surf-ori/pid2portal-project/tree/main/content">content folder</a>.</p></div></noscript>
+</body>
+</html>
