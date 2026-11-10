@@ -3,21 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PID2Portal poster</title>
+<title>ORI Quality Monitor poster</title>
 <!--
-  PID2Portal poster for the Barcelona Declaration conference, Berlin, 24–25 November 2026.
-  Size: A0 portrait (841 × 1189 mm). Change --poster-w / --poster-h below for another size.
+  Poster for the Barcelona Declaration conference, Berlin, 24–25 November 2026:
+  "ORI Quality Monitoring: lessons from monitoring and improving the quality of Dutch open research information".
+  Size: A0 portrait (841 × 1189 mm). Change --poster-w / --poster-h and @page below for another size.
 
   Editing:
-  - Edit the text straight in this file, or open the page and click "Edit text" to type on the poster itself.
-  - "Save as PDF" opens the print dialog: choose "Save as PDF", paper size A0 (or "Custom 841 × 1189 mm"), margins none, background graphics on.
-  - Images come from ../assets/img/. The QR code (qr-pid2portal.svg) points to https://surf-ori.github.io/pid2portal-project/
+  - Edit the text straight in this file (each block is marked with a comment),
+    or open the page and click "Edit text" to type on the poster itself.
+  - "Save as PDF" opens the print dialog: choose "Save as PDF", paper size A0 (or custom 841 × 1189 mm),
+    margins none, background graphics on.
+  - Images come from ../assets/img/. QR codes: qr-pid2portal.svg (project website), qr-ori-dashboard.svg (dashboard).
+  - The figures marked "grow" stretch or shrink to fill the space that is left, so the poster stays one page.
 -->
 <script src="https://surf-ori.github.io/surf-design-system/components/lib/surf-theme.js"></script>
 <link rel="stylesheet" href="https://surf-ori.github.io/surf-design-system/tokens.css">
 <style>
   /* A poster is printed: always the light theme. */
-  :root { --poster-w: 841mm; --poster-h: 1189mm; --pad: 34mm; --gap: 18mm; }
+  :root { --poster-w: 841mm; --poster-h: 1189mm; --pad: 32mm; --gap: 16mm; }
   @page { size: 841mm 1189mm; margin: 0; }
 
   * { box-sizing: border-box; }
@@ -29,7 +33,7 @@
   .scaler { transform-origin: top center; }
   .poster {
     width: var(--poster-w); height: var(--poster-h); background: #fff; overflow: hidden;
-    display: grid; grid-template-rows: auto auto 1fr auto auto; position: relative;
+    display: flex; flex-direction: column; position: relative;
     box-shadow: 0 10px 40px rgba(0,0,0,.25);
   }
   @media print {
@@ -47,68 +51,71 @@
   [contenteditable="true"] :hover { outline: 2px dashed var(--surf-orange); outline-offset: 4px; }
 
   h1, h2, h3, .num { font-family: var(--font-display); letter-spacing: -0.01em; margin: 0; }
-  p { margin: 0 0 6mm; }
+  p { margin: 0 0 5mm; }
+  b, strong { font-weight: 700; }
   .orange { color: var(--surf-orange); }
+  .section-title { font-size: 48pt; line-height: 1.05; margin-bottom: 8mm; }
+  .section-title small { display: block; font: 600 22pt/1.3 var(--font-body); color: #3a3a3a; margin-top: 3mm; letter-spacing: 0; }
 
-  /* header */
-  .head { background: #000; color: #fff; padding: 28mm var(--pad) 16mm; display: grid; grid-template-columns: 1fr auto; gap: var(--gap); align-items: start; }
-  .eyebrow { font: 700 26pt/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--surf-orange); margin-bottom: 8mm; }
-  .head h1 { font-size: 150pt; font-weight: 900; line-height: .95; }
-  .head .sub { font-size: 38pt; line-height: 1.22; margin-top: 8mm; max-width: 620mm; color: #f5f5f5; }
-  .authors { font-size: 24pt; margin-top: 12mm; color: #d4d4d4; }
+  /* ---------- header ---------- */
+  .head { background: #000; color: #fff; padding: 26mm var(--pad) 18mm; display: grid; grid-template-columns: 1fr auto; gap: var(--gap); align-items: start; }
+  .eyebrow { font: 700 24pt/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--surf-orange); margin-bottom: 7mm; }
+  .head h1 { font-size: 118pt; font-weight: 900; line-height: .98; }
+  .head .sub { font-size: 36pt; line-height: 1.22; margin-top: 8mm; color: #f5f5f5; max-width: 640mm; }
+  .authors { font-size: 24pt; margin-top: 10mm; color: #d4d4d4; }
   .authors strong { color: #fff; }
-  .head .logo { width: 150mm; filter: none; }
+  .head .logo { width: 130mm; }
 
-  /* intro band */
-  .intro { display: grid; grid-template-columns: 1.15fr 1fr; gap: var(--gap); padding: 15mm var(--pad); background: var(--surf-orange); }
-  .intro h2 { font-size: 54pt; line-height: 1.05; margin-bottom: 6mm; }
-  .intro p { font-size: 28pt; line-height: 1.35; }
-  .quote { font-family: var(--font-display); font-weight: 800; font-size: 40pt; line-height: 1.15; }
+  /* ---------- pitch band ---------- */
+  .pitch { background: var(--surf-orange); padding: 14mm var(--pad); display: grid; grid-template-columns: 1.35fr 1fr; gap: var(--gap); align-items: center; }
+  .pitch .quote { font-family: var(--font-display); font-weight: 800; font-size: 40pt; line-height: 1.15; margin: 0; }
+  .pitch p { font-size: 25pt; line-height: 1.35; }
+  .badges { display: flex; flex-wrap: wrap; gap: 3mm; }
+  .badge { background: #000; color: #fff; font: 700 20pt/1 var(--font-body); padding: 4mm 6mm; border-radius: 99mm; }
 
-  /* body */
-  .body { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); padding: 16mm var(--pad) 0; min-height: 0; }
-  .col { display: flex; flex-direction: column; gap: 8mm; min-height: 0; }
-  .obj { display: flex; align-items: baseline; gap: 8mm; border-bottom: 2.5mm solid #000; padding-bottom: 5mm; }
-  .obj .num { font-size: 110pt; font-weight: 900; color: var(--surf-orange); line-height: .8; }
-  .obj h2 { font-size: 50pt; line-height: 1.05; }
-  .obj .for { font-size: 20pt; color: #3a3a3a; margin-top: 3mm; font-family: var(--font-body); font-weight: 600; letter-spacing: 0; }
-  .text { font-size: 25pt; line-height: 1.38; }
-  .text ul { margin: 0; padding-left: 9mm; }
-  .text li { margin-bottom: 3mm; }
-  .text li::marker { color: var(--surf-orange); }
-  .frame { border: 3mm solid #000; border-radius: 10mm; overflow: hidden; background: #fff; margin: 0; }
+  /* ---------- journey ---------- */
+  .journey { padding: 16mm var(--pad) 0; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10mm; }
+  .step { border: 1.4mm solid #000; border-radius: 10mm; padding: 9mm 10mm; position: relative; }
+  .step:not(:last-child)::after { content: "→"; position: absolute; right: -9mm; top: 50%; transform: translateY(-50%); font: 900 44pt/1 var(--font-display); color: var(--surf-orange); background: #fff; }
+  .step .num { font-size: 64pt; font-weight: 900; color: var(--surf-orange); line-height: .9; }
+  .step h3 { font-size: 32pt; margin: 3mm 0 3mm; }
+  .step p { font-size: 20pt; line-height: 1.35; margin: 0 0 3mm; }
+  .step .ref { font-size: 16pt; color: #3a3a3a; margin: 0; }
+
+  /* ---------- four questions ---------- */
+  .dims { padding: 16mm var(--pad) 0; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10mm var(--gap); flex: 1 1 0; min-height: 0; }
+  .dim { display: flex; flex-direction: column; min-height: 0; }
+  .dim h3 { font-size: 34pt; line-height: 1.1; }
+  .dim h3 .tag { display: inline-block; font: 700 18pt/1 var(--font-body); text-transform: uppercase; letter-spacing: .06em; background: var(--surf-orange); color: #000; padding: 2.5mm 4mm; border-radius: 2mm; margin-right: 4mm; vertical-align: middle; }
+  .dim p { font-size: 20pt; line-height: 1.35; margin: 3mm 0 4mm; color: #1a1a1a; }
+  .frame { border: 2.5mm solid #000; border-radius: 8mm; overflow: hidden; background: #fff; margin: 0; }
   .frame img { display: block; width: 100%; }
-  /* the screenshots grow or shrink to fill what space is left, so the poster always fits one page */
-  .frame.grow { flex: 1 1 0; min-height: 80mm; display: flex; }
-  .frame.grow img { height: 100%; object-fit: cover; object-position: top left; }
-  .next { margin-top: auto; }
-  figcaption { font-size: 18pt; color: #3a3a3a; margin-top: 3mm; }
-  .dims { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
-  .dim { border: 1.2mm solid #000; border-radius: 6mm; padding: 5mm; }
-  .dim b { display: block; font-family: var(--font-display); font-size: 26pt; }
-  .dim span { font-size: 17pt; line-height: 1.25; display: block; margin-top: 2mm; color: #3a3a3a; }
-  .pill { display: inline-block; background: var(--tone-orange-bg); color: var(--tone-orange-fg); font: 700 20pt/1 var(--font-body); padding: 3mm 6mm; border-radius: 99mm; margin: 0 2mm 2mm 0; }
-  .twoimg { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .grow { flex: 1 1 0; min-height: 40mm; display: flex; }
+  .grow img { height: 100%; object-fit: contain; object-position: center top; }
+  .note { font-size: 16pt; color: #3a3a3a; margin: 4mm 0 0; }
 
-  /* lessons */
-  .lessons { margin: 12mm var(--pad) 0; background: #f5f5f5; border-radius: 12mm; padding: 14mm 16mm; }
-  .lessons h2 { font-size: 46pt; margin-bottom: 8mm; }
-  .lessons ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10mm; counter-reset: l; }
-  .lessons li { counter-increment: l; font-size: 22pt; line-height: 1.3; }
-  .lessons li::before { content: counter(l); display: block; font: 900 60pt/1 var(--font-display); color: var(--surf-orange); margin-bottom: 3mm; }
-  .lessons li b { display: block; font-family: var(--font-display); font-size: 26pt; margin-bottom: 2mm; }
+  /* ---------- behind it + reflections ---------- */
+  .lower { padding: 16mm var(--pad) 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
+  .box { background: #f5f5f5; border-radius: 10mm; padding: 10mm 12mm; }
+  .box h2 { font-size: 36pt; margin-bottom: 5mm; }
+  .box ul { margin: 0; padding-left: 8mm; }
+  .box li { font-size: 20pt; line-height: 1.35; margin-bottom: 3mm; }
+  .box li::marker { color: var(--surf-orange); }
+  .reflect { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7mm; }
+  .reflect h3 { font-size: 24pt; margin-bottom: 3mm; }
+  .reflect ul { padding-left: 6mm; }
+  .reflect li { font-size: 18pt; }
 
-  /* footer */
-  .foot { margin-top: 12mm; background: #000; color: #fff; padding: 18mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 16mm; align-items: center; }
-  .qr { width: 160mm; background: #fff; border-radius: 8mm; padding: 6mm; }
-  .qr img { display: block; width: 100%; }
-  .foot h2 { font-size: 64pt; line-height: 1.05; }
-  .foot .url { font: 700 30pt/1.2 var(--font-body); color: var(--surf-orange); margin-top: 6mm; word-break: break-all; }
-  .foot .small { font-size: 20pt; color: #d4d4d4; margin-top: 8mm; line-height: 1.35; }
-  .stats { display: grid; gap: 6mm; }
-  .stat { border-left: 2mm solid var(--surf-orange); padding-left: 6mm; }
-  .stat b { display: block; font: 900 50pt/1 var(--font-display); }
-  .stat span { font-size: 18pt; color: #d4d4d4; }
+  /* ---------- footer ---------- */
+  .foot { margin-top: 16mm; background: #000; color: #fff; padding: 14mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
+  .qr { width: 125mm; text-align: center; }
+  .qr img { display: block; width: 100%; background: #fff; border-radius: 6mm; padding: 4mm; }
+  .qr span { display: block; font: 700 18pt/1.2 var(--font-body); margin-top: 3mm; color: var(--surf-orange); }
+  .foot h2 { font-size: 52pt; line-height: 1.05; }
+  .foot .url { font: 700 26pt/1.3 var(--font-body); color: var(--surf-orange); margin: 4mm 0 0; }
+  .foot .small { font-size: 18pt; color: #d4d4d4; margin-top: 6mm; line-height: 1.35; }
 </style>
 </head>
 <body>
@@ -126,99 +133,107 @@
   <header class="head">
     <div>
       <p class="eyebrow">Barcelona Declaration Conference · Berlin · 24–25 November 2026</p>
-      <h1>From PID<br>to Portal</h1>
-      <p class="sub">How the Netherlands made its open research information measurable, improvable and visible: in twelve months, together with the Dutch Barcelona Declaration signatories.</p>
+      <h1>Where do PIDs<br>actually break?</h1>
+      <p class="sub">ORI Quality Monitoring: lessons from monitoring and improving the quality of Dutch open research information</p>
       <p class="authors"><strong>Maurice Vanderfeesten</strong> · SURF · maurice.vanderfeesten@surf.nl</p>
     </div>
     <img class="logo" src="../assets/img/SURF_diap.svg" alt="SURF">
   </header>
 
-  <!-- ===== INTRO ===== -->
-  <section class="intro">
+  <!-- ===== PITCH ===== -->
+  <section class="pitch">
+    <p class="quote">A dashboard that turns Barcelona Declaration commitments into concrete, institution-level goals.</p>
     <div>
-      <h2>Missing ORCIDs. Incomplete affiliations. Conflicting open access metadata.</h2>
-      <p>These gaps weaken reporting, evaluation and discovery of research. But where exactly in the research information chain do they occur, and what can we do about them together?</p>
-    </div>
-    <div>
-      <p class="quote">Ambition: high quality Dutch open research information covering the whole research lifecycle, for independent and responsible research reporting and analytics.</p>
-      <p>PID2Portal (Sept 2025 – Aug 2026) is led by SURF and funded by Universities of the Netherlands (€190k). It bridges to the Open Science NL infrastructures DURF and BROCCOLI.</p>
+      <p>Co-designed with the Dutch Barcelona Declaration signatories, so what gets measured reflects where better metadata brings real value, and what it takes to close the gaps.</p>
+      <div class="badges">
+        <span class="badge">Live since September 2026</span>
+        <span class="badge">18 organisations</span>
+        <span class="badge">Fully open stack</span>
+      </div>
     </div>
   </section>
 
-  <!-- ===== TWO OBJECTIVES ===== -->
-  <section class="body">
-    <div class="col">
-      <div class="obj">
+  <!-- ===== JOURNEY: consultation → metrics → dashboard ===== -->
+  <section class="journey">
+    <h2 class="section-title">From consultation to metrics to dashboard</h2>
+    <div class="steps">
+      <div class="step">
         <span class="num">1</span>
-        <div><h2>Monitor open research information</h2><p class="for">For research intelligence teams at Barcelona signatories</p></div>
+        <h3>Consultation</h3>
+        <p>14 use cases from 10 organisations: reporting, assessment and analysis. Fix three elements first: <b>DOIs</b>, <b>ROR</b> and <b>ORCID</b>.</p>
+        <p class="ref">Framework report · doi.org/10.5281/zenodo.18667698</p>
       </div>
-      <figure class="frame grow"><img src="../assets/img/ori-dashboard-completeness.jpg" alt="ORI data quality dashboard"></figure>
-      <div class="text">
-        <p><b>ORI data quality dashboard.</b> Compare your CRIS with OpenAlex and OpenAIRE on four dimensions, and get suggested interventions with effort and impact.</p>
-      </div>
-      <div class="dims">
-        <div class="dim"><b>Coverage</b><span>Which records are missing per source?</span></div>
-        <div class="dim"><b>Completeness</b><span>Which fields are empty?</span></div>
-        <div class="dim"><b>Enrichment</b><span>What can other sources fill in?</span></div>
-        <div class="dim"><b>Accuracy</b><span>Where do sources disagree?</span></div>
-      </div>
-      <div class="text">
-        <ul>
-          <li><b>Framework report:</b> 14 use cases from 10 organisations. Fix three elements first: <b>DOIs</b>, <b>ROR</b> and <b>ORCID</b>.</li>
-          <li><b>Metrics report:</b> what to measure in OpenAlex, OpenAIRE, Crossref and CRIS, and how.</li>
-          <li><b>ORI DuckLake:</b> 2 TB of open research information as Parquet on SURF storage, queryable by anyone, also in plain language with open AI agents.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="obj">
+      <div class="step">
         <span class="num">2</span>
-        <div><h2>Strengthen the Netherlands Research Portal</h2><p class="for">For heads of research support, repository and CRIS owners</p></div>
+        <h3>Metrics</h3>
+        <p>What to measure and how, comparing CRIS with OpenAlex, OpenAIRE and Crossref. Every gap is linked to an intervention, with its effort and impact.</p>
+        <p class="ref">Metrics report · doi.org/10.5281/zenodo.23682960</p>
       </div>
-      <figure class="frame grow"><img src="../assets/img/nl-research-portal.jpg" alt="Netherlands Research Portal"></figure>
-      <div class="text">
-        <p><b>netherlands.openaire.eu.</b> All Dutch publications, datasets and software from repositories and CRIS systems, linked to grants and organisations. Built on OpenAIRE.</p>
-        <ul>
-          <li>A curated, open list of <b>Dutch research organisations</b> with their identifiers.</li>
-          <li>A live status of <b>repositories and CRIS systems</b>, and a metadata compatibility monitor built on the DuckLake.</li>
-          <li><b>People</b> are now an entity in the OpenAIRE Graph and API: the basis for an expert finder.</li>
-        </ul>
+      <div class="step">
+        <span class="num">3</span>
+        <h3>Dashboard</h3>
+        <p>Pick your organisation, source and entity type. See your gaps on four dimensions and decide where to act. Onboarding for signatories this autumn.</p>
+        <p class="ref">ori-dashboard.surf.nl</p>
       </div>
-      <div>
-        <span class="pill">UKB libraries join OpenAIRE</span>
-        <span class="pill">National membership consortium</span>
-        <span class="pill">Shared maintenance costs</span>
-        <span class="pill">Aligning metadata standards</span>
-      </div>
-      <p class="text next"><b>Next:</b> DURF carries portal governance forward; BROCCOLI takes over the ORI dashboard and DuckLake.</p>
     </div>
   </section>
 
-  <!-- ===== LESSONS ===== -->
-  <section class="lessons">
-    <h2>What we learned, for every Barcelona signatory</h2>
-    <ol>
-      <li><b>Start from use cases</b>Ask what your institution needs open metadata for. That tells you which fields to fix first.</li>
-      <li><b>Compare sources openly</b>Gaps only become visible when you put your CRIS next to the open indexes, record by record.</li>
-      <li><b>Open stacks work</b>A data lake of Parquet files on public storage is cheap, sovereign and reusable by others.</li>
-      <li><b>Govern together</b>Dashboards are the easy part. Lasting change needs shared governance, funding and standards.</li>
-    </ol>
+  <!-- ===== FOUR QUESTIONS ===== -->
+  <section class="dims">
+    <h2 class="section-title">Four questions every institution can now answer<small>Example views from the dashboard (illustrative data, from the metrics report)</small></h2>
+    <div class="dim-grid">
+      <div class="dim">
+        <h3><span class="tag">Coverage</span>Is our output in the open indexes?</h3>
+        <p>Records only in your CRIS, in both, or only in OpenAlex, Crossref or OpenAIRE.</p>
+        <figure class="frame grow"><img src="../assets/img/dashboard/coverage.jpg" alt="Coverage tab: CRIS compared with OpenAlex, Crossref and OpenAIRE"></figure>
+      </div>
+      <div class="dim">
+        <h3><span class="tag">Completeness</span>How many records lack an ORCID?</h3>
+        <p>The share of records with a valid DOI, ORCID, ROR, grant DOI, ISSN, OA status and corresponding author.</p>
+        <figure class="frame grow"><img src="../assets/img/dashboard/completeness.jpg" alt="Completeness tab: share of records per metadata field"></figure>
+      </div>
+      <div class="dim">
+        <h3><span class="tag">Enrichment</span>What can other sources fill in?</h3>
+        <p>Missing values in your source that OpenAIRE or OpenAlex already have, ready to recover.</p>
+        <figure class="frame grow"><img src="../assets/img/dashboard/enrichment.jpg" alt="Enrichment tab: missing RORs that can be recovered from OpenAIRE and OpenAlex"></figure>
+      </div>
+      <div class="dim">
+        <h3><span class="tag">Accuracy</span>Is that ROR affiliation right?</h3>
+        <p>Where sources disagree, and which one is wrong: checked against raw affiliation strings.</p>
+        <figure class="frame grow"><img src="../assets/img/dashboard/accuracy-agreement.jpg" alt="Accuracy tab: conflicts and agreement between CRIS and OpenAlex"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPEN STACK + REFLECTIONS ===== -->
+  <section class="lower">
+    <div class="box">
+      <h2>Fully open, behind the scenes</h2>
+      <ul>
+        <li>A public data lake (DuckLake, Parquet, SURF Object Store) with <b>OpenAlex, OpenAIRE, CRIS and OpenAPC</b>: every number is reproducible.</li>
+        <li>Open pipelines from raw snapshots to bronze, silver and gold.</li>
+        <li>Described for humans and AI: skills and an MCP server let non-technical users build transparent, auditable reports.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Reflections</h2>
+      <div class="reflect">
+        <div><h3>What worked</h3><ul><li>Co-design gave metrics that institutions recognise.</li><li>Linking gaps to effort shows where to act.</li></ul></div>
+        <div><h3>What was hard</h3><ul><li>Accuracy has no single ground truth.</li><li>Feedback loops: sources copy each other, and their errors.</li></ul></div>
+        <div><h3>What's next</h3><ul><li>BROCCOLI maintains the dashboard and data lake.</li><li>Long-term governance in DURF.</li></ul></div>
+      </div>
+    </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="foot">
-    <div class="qr"><img src="qr-pid2portal.svg" alt="QR code to the PID2Portal project website"></div>
+    <div class="qr"><img src="qr-ori-dashboard.svg" alt="QR code to the ORI dashboard"><span>Try the dashboard</span></div>
     <div>
-      <h2>Explore everything we built</h2>
-      <p class="url">surf-ori.github.io/pid2portal-project</p>
-      <p class="small">Dashboard, data lake, code, reports and the PID Fest talk, all open.<br>Funded by Universities of the Netherlands (UNL). Reports by Bianca Kramer (Sesame Open Science).<br>Contact: maurice.vanderfeesten@surf.nl</p>
+      <h2>Set your own goals for better open research information</h2>
+      <p class="url">ori-dashboard.surf.nl · surf-ori.github.io/pid2portal-project</p>
+      <p class="small">Part of the PID to Portal project, led by SURF and funded by Universities of the Netherlands (UNL). Reports by Bianca Kramer (Sesame Open Science). All code, data and reports are open.</p>
     </div>
-    <div class="stats">
-      <div class="stat"><b>14</b><span>use cases</span></div>
-      <div class="stat"><b>2 TB</b><span>open ORI data</span></div>
-      <div class="stat"><b>12</b><span>months</span></div>
-    </div>
+    <div class="qr"><img src="qr-pid2portal.svg" alt="QR code to the PID2Portal project website"><span>All deliverables</span></div>
   </footer>
 
 </article>
