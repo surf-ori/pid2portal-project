@@ -10,7 +10,6 @@ Poster for the [Barcelona Declaration conference](https://barcelona-declaration.
 
 - Change the text in `index.html` (every block is marked with a comment), or open the poster in a browser and click **Edit text** to type on it directly. Edits in the browser are not saved: export them with **Save as PDF**, or copy them into the file.
 - The two screenshots grow or shrink to fill the space that is left, so the poster stays one page when you add or remove text.
-- Placeholders to fill in: `[co-authors]` and `[email address]`.
 
 ## Export to PDF
 
