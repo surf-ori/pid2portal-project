@@ -4,7 +4,7 @@
   "use strict";
 
   var CONTENT = "content/";
-  var META_KEYS = ["icon", "tags", "number", "status"];
+  var META_KEYS = ["icon", "tags", "number", "status", "date"];
 
   /* ---------- helpers ---------- */
 
@@ -218,7 +218,8 @@
         }
         var body = el("div", "card-body");
         var top = el("div", "card-top");
-        if (cm.number) top.appendChild(el("span", "card-number", escapeHtml(cm.number)));
+        if (cm.date) top.appendChild(el("span", "card-date", escapeHtml(cm.date)));
+        else if (cm.number) top.appendChild(el("span", "card-number", escapeHtml(cm.number)));
         else if (cm.icon && !cm.bigIcon) top.innerHTML = '<img class="pictogram" src="assets/icons/' + encodeURIComponent(cm.icon) + '.png" alt="">';
         top.insertAdjacentHTML("beforeend", tagsHtml(cm.tags));
         body.appendChild(top);
