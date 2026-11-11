@@ -12,9 +12,11 @@ The dashboard images in `../assets/img/dashboard/`: `live-*.jpg` are captured fr
 
 ## Citation and licence
 
-The poster is licensed under CC BY 4.0 (badge: `../assets/img/cc-by.svg`). Cite it as:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24132077.svg)](https://doi.org/10.5281/zenodo.24132077)
 
-Vanderfeesten, M. (2026). *Better metadata, better decisions: how the Dutch Barcelona Declaration signatories monitor and improve their open research information* [Poster]. Barcelona Declaration Conference 2026, Berlin, 24–25 November. https://surf-ori.github.io/pid2portal-project/poster/
+The poster is published on Zenodo (https://doi.org/10.5281/zenodo.24132077) and licensed under CC BY 4.0 (badge: `../assets/img/cc-by.svg`). Cite it as:
+
+Vanderfeesten, M. (2026). *Better metadata, better decisions: how the Dutch Barcelona Declaration signatories monitor and improve their open research information* [Poster]. Barcelona Declaration Conference 2026, Berlin, 24–25 November. https://doi.org/10.5281/zenodo.24132077
 
 ## Editing
 
