@@ -103,10 +103,11 @@ code { font-family: var(--font-mono); font-size: 0.9em; }
 
 /* ---------- hero ---------- */
 .layout-hero { padding-top: var(--space-8); padding-bottom: var(--space-8); }
-.hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: var(--space-8); align-items: center; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: var(--space-8); align-items: center; }
 .hero-text > p:not(.eyebrow) { font-size: 21px; color: var(--fg-2); max-width: 36em; }
-/* the slogan straight under the title */
-.hero-text > h1 + p:not(.eyebrow) { font-family: var(--font-display); font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); line-height: 1.2; color: var(--fg-accent-strong); margin-top: calc(-1 * var(--space-2)); }
+/* two-colour title, as on the headers: the emphasised part in orange */
+.hero-text h1 em { font-style: normal; color: var(--surf-orange); }
+.hero-text h1 { font-size: clamp(38px, 4.3vw, 62px); text-wrap: initial; }
 .hero-text .actions { padding-top: var(--space-4); }
 .hero-text .actions .button { padding: var(--space-3) var(--space-5); font-size: var(--fs-body); }
 .hero-visual { position: relative; padding-bottom: 18%; }
@@ -264,6 +265,15 @@ code { font-family: var(--font-mono); font-size: 0.9em; }
 
 /* ---------- prose ---------- */
 .prose { max-width: 760px; }
+/* acknowledgements: people with ORCID icon and institution (ROR) */
+.layout-prose .section-head { max-width: 860px; margin-bottom: 0; }
+.layout-prose h3 { margin-top: var(--space-6); }
+.layout-prose ul { padding-left: 1.2em; margin: 0; }
+.layout-prose li { margin-bottom: var(--space-3); color: var(--fg-2); }
+.layout-prose li::marker { color: var(--surf-orange); }
+.layout-prose li strong { color: var(--fg-1); }
+a.orcid { display: inline-block; vertical-align: -2px; margin: 0 2px 0 4px; line-height: 0; }
+a.orcid img { width: 16px; height: 16px; display: block; }
 
 /* ---------- footer ---------- */
 .site-footer { background: #000; color: #d4d4d4; padding: var(--space-8) 0; margin-top: var(--space-8); }

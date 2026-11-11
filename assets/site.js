@@ -85,6 +85,18 @@
   }
 
   function decorateLinks(root) {
+    // [ORCID](https://orcid.org/…) becomes the ORCID iD icon after a name.
+    root.querySelectorAll('a[href^="https://orcid.org/"]').forEach(function (a) {
+      if (a.textContent.trim().toUpperCase() !== "ORCID") return;
+      var id = a.getAttribute("href").split("/").pop();
+      a.className = "orcid";
+      a.setAttribute("aria-label", "ORCID iD " + id);
+      a.title = "ORCID iD " + id;
+      a.innerHTML = '<img src="assets/img/orcid.svg" alt="" width="16" height="16">';
+    });
+    root.querySelectorAll('a[href^="https://ror.org/"]').forEach(function (a) {
+      a.title = "ROR " + a.getAttribute("href").split("/").pop();
+    });
     root.querySelectorAll("a[href]").forEach(function (a) {
       if (isExternal(a)) { a.target = "_blank"; a.rel = "noopener"; }
     });
