@@ -20,5 +20,5 @@ PID2Portal was a team effort. We thank everyone who contributed their time, expe
 ### Behind the scenes
 
 - **Joeri Both** [ORCID](https://orcid.org/0009-0001-3218-4233) · [Vrije Universiteit Amsterdam](https://ror.org/008xxew50): for his encouragement and the connection with OpenAIRE.
-- **Eileen Waegemaekers** [ORCID](https://orcid.org/0009-0005-5749-4886) · [SURF](https://ror.org/009vhk114) and **John Doove** [ORCID](https://orcid.org/0000-0001-8217-2217): for creating this opportunity within SURF.
+- **Eileen Waegemaekers** [ORCID](https://orcid.org/0009-0005-5749-4886) and **John Doove** [ORCID](https://orcid.org/0000-0001-8217-2217) · [SURF](https://ror.org/009vhk114): for creating this opportunity within SURF.
 - **Darco Jansen** [ORCID](https://orcid.org/0009-0001-0364-0252) · [Universities of the Netherlands](https://ror.org/05wvdt748): for the funding, and for building support among the boards of the Dutch universities.
