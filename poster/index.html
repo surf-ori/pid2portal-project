@@ -8,20 +8,27 @@
   Poster for the Barcelona Declaration conference, Berlin, 24–25 November 2026:
   "ORI Quality Monitoring: lessons from monitoring and improving the quality of Dutch open research information".
   Size: A0 portrait (841 × 1189 mm). Change --poster-w / --poster-h and @page below for another size.
+  Style: compositions from the SURF presentation template (cover blocks, ambition slide, process chevrons,
+  coloured tiles, timeline with year pills, "thank you" panel).
 
   Editing:
   - Edit the text straight in this file (each block is marked with a comment),
     or open the page and click "Edit text" to type on the poster itself.
   - "Save as PDF" opens the print dialog: choose "Save as PDF", paper size A0 (or custom 841 × 1189 mm),
     margins none, background graphics on.
-  - Images come from ../assets/img/. QR codes: qr-pid2portal.svg (project website), qr-ori-dashboard.svg (dashboard).
-  - The figures marked "grow" stretch or shrink to fill the space that is left, so the poster stays one page.
+  - Images come from ../assets/img/ and pictograms from ../assets/icons/.
+    QR codes: qr-ori-dashboard.svg (dashboard), qr-pid2portal.svg (project website).
+  - The four dashboard screenshots stretch or shrink to fill the space that is left, so the poster stays one page.
 -->
 <script src="https://surf-ori.github.io/surf-design-system/components/lib/surf-theme.js"></script>
 <link rel="stylesheet" href="https://surf-ori.github.io/surf-design-system/tokens.css">
 <style>
   /* A poster is printed: always the light theme. */
-  :root { --poster-w: 841mm; --poster-h: 1189mm; --pad: 32mm; --gap: 16mm; }
+  :root {
+    --poster-w: 841mm; --poster-h: 1189mm; --pad: 32mm; --gap: 14mm;
+    --orange: var(--surf-orange); --yellow: var(--surf-yellow); --blue: var(--surf-blue);
+    --green: var(--surf-green-dark); --purple: var(--surf-purple); --peach: var(--surf-orange-100);
+  }
   @page { size: 841mm 1189mm; margin: 0; }
 
   * { box-sizing: border-box; }
@@ -42,80 +49,117 @@
     .scaler { transform: none !important; height: auto !important; }
     .poster { box-shadow: none; }
   }
-
   .toolbar { position: fixed; top: 0; left: 0; right: 0; z-index: 10; display: flex; gap: 8px; align-items: center; padding: 10px 16px; background: #000; color: #fff; font: 600 14px/1.2 var(--font-body); }
-  .toolbar button { font: inherit; padding: 8px 14px; border-radius: 8px; border: 0; cursor: pointer; background: var(--surf-orange); color: #000; }
+  .toolbar button { font: inherit; padding: 8px 14px; border-radius: 8px; border: 0; cursor: pointer; background: var(--orange); color: #000; }
   .toolbar button.alt { background: transparent; color: #fff; border: 1px solid #6e6e6e; }
   .toolbar .hint { margin-left: auto; font-weight: 400; opacity: .75; }
   @media print { .toolbar { display: none !important; } }
-  [contenteditable="true"] :hover { outline: 2px dashed var(--surf-orange); outline-offset: 4px; }
+  [contenteditable="true"] :hover { outline: 2px dashed var(--orange); outline-offset: 4px; }
 
   h1, h2, h3, .num { font-family: var(--font-display); letter-spacing: -0.01em; margin: 0; }
-  p { margin: 0 0 5mm; }
+  p { margin: 0 0 4mm; }
   b, strong { font-weight: 700; }
-  .orange { color: var(--surf-orange); }
-  .section-title { font-size: 48pt; line-height: 1.05; margin-bottom: 8mm; }
-  .section-title small { display: block; font: 600 22pt/1.3 var(--font-body); color: #3a3a3a; margin-top: 3mm; letter-spacing: 0; }
+  .icon { width: 26mm; height: 26mm; object-fit: contain; display: block; }
 
-  /* ---------- header ---------- */
-  .head { background: #000; color: #fff; padding: 26mm var(--pad) 18mm; display: grid; grid-template-columns: 1fr auto; gap: var(--gap); align-items: start; }
-  .eyebrow { font: 700 24pt/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--surf-orange); margin-bottom: 7mm; }
-  .head h1 { font-size: 118pt; font-weight: 900; line-height: .98; }
-  .head .sub { font-size: 36pt; line-height: 1.22; margin-top: 8mm; color: #f5f5f5; max-width: 640mm; }
-  .authors { font-size: 24pt; margin-top: 10mm; color: #d4d4d4; }
-  .authors strong { color: #fff; }
-  .head .logo { width: 130mm; }
+  /* template title: thin orange bar before the title */
+  .bar-title { font-size: 46pt; line-height: 1.05; padding-left: 8mm; border-left: 2.2mm solid var(--orange); margin-bottom: 9mm; }
+  .bar-title small { display: block; font: 600 20pt/1.3 var(--font-body); color: #3a3a3a; margin-top: 3mm; letter-spacing: 0; }
 
-  /* ---------- pitch band ---------- */
-  .pitch { background: var(--surf-orange); padding: 14mm var(--pad); display: grid; grid-template-columns: 1.35fr 1fr; gap: var(--gap); align-items: center; }
-  .pitch .quote { font-family: var(--font-display); font-weight: 800; font-size: 40pt; line-height: 1.15; margin: 0; }
-  .pitch p { font-size: 25pt; line-height: 1.35; }
-  .badges { display: flex; flex-wrap: wrap; gap: 3mm; }
-  .badge { background: #000; color: #fff; font: 700 20pt/1 var(--font-body); padding: 4mm 6mm; border-radius: 99mm; }
+  /* ---------- 1. cover: title + composition of rounded blocks ---------- */
+  .cover { position: relative; padding: 22mm var(--pad) 14mm; display: grid; grid-template-columns: 1fr 330mm; gap: 12mm; align-items: center; }
+  .eyebrow { font: 700 22pt/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--orange); margin-bottom: 7mm; }
+  .cover h1 { font-size: 104pt; font-weight: 900; line-height: .98; }
+  .cover .sub { font-size: 30pt; line-height: 1.22; margin-top: 8mm; color: #1a1a1a; }
+  .authors { font-size: 22pt; margin-top: 9mm; color: #3a3a3a; }
+  .authors strong { color: #000; }
+  .cover .logo { width: 60mm; margin-top: 8mm; display: block; }
+  .collage { position: relative; height: 200mm; }
+  .collage > * { position: absolute; border-radius: 9mm; }
+  .collage .b-orange { left: 0; top: 12mm; width: 120mm; height: 85mm; background: var(--orange); }
+  .collage .b-yellow { right: 8mm; top: 0; width: 95mm; height: 55mm; background: var(--yellow); }
+  .collage .b-green  { left: 22mm; bottom: 0; width: 105mm; height: 50mm; background: var(--green); }
+  .collage .b-peach  { right: 0; bottom: 8mm; width: 60mm; height: 95mm; background: var(--peach); }
+  .collage .b-blue   { right: 40mm; bottom: 5mm; width: 50mm; height: 40mm; border: 2mm solid var(--blue); background: transparent; }
+  .collage .shot { left: 30mm; top: 30mm; width: 270mm; height: 150mm; overflow: hidden; border: 2.5mm solid #000; background: #fff; }
+  .collage .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
 
-  /* ---------- journey ---------- */
-  .journey { padding: 16mm var(--pad) 0; }
-  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10mm; }
-  .step { border: 1.4mm solid #000; border-radius: 10mm; padding: 9mm 10mm; position: relative; }
-  .step:not(:last-child)::after { content: "→"; position: absolute; right: -9mm; top: 50%; transform: translateY(-50%); font: 900 44pt/1 var(--font-display); color: var(--surf-orange); background: #fff; }
-  .step .num { font-size: 64pt; font-weight: 900; color: var(--surf-orange); line-height: .9; }
-  .step h3 { font-size: 32pt; margin: 3mm 0 3mm; }
-  .step p { font-size: 20pt; line-height: 1.35; margin: 0 0 3mm; }
-  .step .ref { font-size: 16pt; color: #3a3a3a; margin: 0; }
+  /* ---------- 2. ambition (template: purple ambition slide) ---------- */
+  .ambition { background: var(--purple); color: #fff; padding: 12mm var(--pad) 14mm; text-align: center; }
+  .label { display: flex; align-items: center; justify-content: center; gap: 10mm; font: 700 22pt/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8mm; }
+  .label::before, .label::after { content: ""; width: 90mm; height: .6mm; background: currentColor; opacity: .8; }
+  .ambition .statement { font-family: var(--font-display); font-weight: 800; font-size: 44pt; line-height: 1.15; max-width: 700mm; margin: 0 auto 6mm; }
+  .ambition p { font-size: 22pt; line-height: 1.35; max-width: 640mm; margin: 0 auto; opacity: .95; }
 
-  /* ---------- four questions ---------- */
-  .dims { padding: 16mm var(--pad) 0; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
-  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10mm var(--gap); flex: 1 1 0; min-height: 0; }
-  .dim { display: flex; flex-direction: column; min-height: 0; }
-  .dim h3 { font-size: 34pt; line-height: 1.1; }
-  .dim h3 .tag { display: inline-block; font: 700 18pt/1 var(--font-body); text-transform: uppercase; letter-spacing: .06em; background: var(--surf-orange); color: #000; padding: 2.5mm 4mm; border-radius: 2mm; margin-right: 4mm; vertical-align: middle; }
-  .dim p { font-size: 20pt; line-height: 1.35; margin: 3mm 0 4mm; color: #1a1a1a; }
-  .frame { border: 2.5mm solid #000; border-radius: 8mm; overflow: hidden; background: #fff; margin: 0; }
-  .frame img { display: block; width: 100%; }
-  .grow { flex: 1 1 0; min-height: 40mm; display: flex; }
-  .grow img { height: 100%; object-fit: contain; object-position: center top; }
-  .note { font-size: 16pt; color: #3a3a3a; margin: 4mm 0 0; }
+  /* ---------- 3. process chevrons (template: "Process – 4 steps") ---------- */
+  .process { padding: 13mm var(--pad) 0; }
+  .chevrons { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .chev { text-align: center; }
+  .chev .icon { margin: 0 auto 4mm; }
+  .chev .arrow {
+    height: 34mm; display: grid; place-items: center; margin-right: -9mm;
+    font: 800 28pt/1 var(--font-display); color: #fff;
+    clip-path: polygon(0 0, calc(100% - 15mm) 0, 100% 50%, calc(100% - 15mm) 100%, 0 100%, 15mm 50%);
+  }
+  .chev:first-child .arrow { clip-path: polygon(0 0, calc(100% - 15mm) 0, 100% 50%, calc(100% - 15mm) 100%, 0 100%); }
+  .chev:nth-child(1) .arrow { background: var(--orange); }
+  .chev:nth-child(2) .arrow { background: var(--yellow); color: #000; }
+  .chev:nth-child(3) .arrow { background: var(--blue); }
+  .chev:nth-child(4) .arrow { background: var(--green); }
+  .chev h3 { font-size: 22pt; margin: 6mm 6mm 2mm; }
+  .chev p { font-size: 18pt; line-height: 1.32; margin: 0 7mm 2mm; }
+  .chev .ref { font-size: 14pt; color: #3a3a3a; }
 
-  /* ---------- behind it + reflections ---------- */
-  .lower { padding: 16mm var(--pad) 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
-  .box { background: #f5f5f5; border-radius: 10mm; padding: 10mm 12mm; }
-  .box h2 { font-size: 36pt; margin-bottom: 5mm; }
-  .box ul { margin: 0; padding-left: 8mm; }
-  .box li { font-size: 20pt; line-height: 1.35; margin-bottom: 3mm; }
-  .box li::marker { color: var(--surf-orange); }
-  .reflect { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7mm; }
-  .reflect h3 { font-size: 24pt; margin-bottom: 3mm; }
-  .reflect ul { padding-left: 6mm; }
-  .reflect li { font-size: 18pt; }
+  /* ---------- 4. four questions on a peach panel ---------- */
+  .dims { margin: 12mm var(--pad) 0; padding: 12mm 14mm 14mm; background: var(--peach); border-radius: 12mm; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 9mm 12mm; flex: 1 1 0; min-height: 0; }
+  .dim { display: flex; flex-direction: column; min-height: 0; background: #fff; border-radius: 9mm; padding: 7mm 8mm 8mm; }
+  .dim-head { display: flex; gap: 5mm; align-items: center; }
+  .chip { flex: none; width: 24mm; height: 24mm; border-radius: 5mm; display: grid; place-items: center; }
+  .chip img { width: 16mm; height: 16mm; filter: invert(1); }
+  .dim:nth-child(1) .chip { background: var(--orange); }
+  .dim:nth-child(2) .chip { background: var(--yellow); } .dim:nth-child(2) .chip img { filter: none; }
+  .dim:nth-child(3) .chip { background: var(--blue); }
+  .dim:nth-child(4) .chip { background: var(--green); }
+  .dim .kicker { font: 700 16pt/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: #3a3a3a; }
+  .dim h3 { font-size: 28pt; line-height: 1.1; margin-top: 1.5mm; }
+  .dim p { font-size: 17pt; line-height: 1.35; margin: 4mm 0 4mm; color: #1a1a1a; }
+  .shot-frame { flex: 1 1 0; min-height: 35mm; display: flex; border: 1.2mm solid #000; border-radius: 6mm; overflow: hidden; background: #fff; margin: 0; }
+  .shot-frame img { width: 100%; height: 100%; object-fit: contain; object-position: center top; display: block; }
 
-  /* ---------- footer ---------- */
-  .foot { margin-top: 16mm; background: #000; color: #fff; padding: 14mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
-  .qr { width: 125mm; text-align: center; }
+  /* ---------- 5. tiles (template: "status of project") ---------- */
+  .tiles { padding: 12mm var(--pad) 0; display: grid; grid-template-columns: 1.25fr 1fr 1fr 1fr; gap: 8mm; }
+  .tile { border-radius: 9mm; padding: 7mm 9mm; }
+  .tile h3 { font-size: 26pt; margin: 3mm 0 4mm; }
+  .tile ul { margin: 0; padding-left: 6mm; }
+  .tile li { font-size: 17pt; line-height: 1.32; margin-bottom: 2.5mm; }
+  .tile .icon { width: 18mm; height: 18mm; }
+  .t-blue { background: var(--blue); color: #fff; } .t-blue .icon { filter: invert(1); }
+  .t-yellow { background: var(--yellow); }
+  .t-orange { background: var(--orange); color: #fff; } .t-orange .icon { filter: invert(1); }
+  .t-green { background: var(--green); color: #fff; } .t-green .icon { filter: invert(1); }
+
+  /* ---------- 6. timeline with year pills (template: "Timeline") ---------- */
+  .timeline { padding: 11mm var(--pad) 0; }
+  .tl { position: relative; display: grid; grid-template-columns: repeat(6, 1fr); text-align: center; }
+  .tl::before { content: ""; position: absolute; left: 0; right: 0; top: 9mm; height: .8mm; background: #9b9b9b; }
+  .tl div { position: relative; }
+  .pill { display: inline-block; font: 800 16pt/1 var(--font-display); color: #fff; padding: 5mm 6mm; border-radius: 3mm; }
+  .tl div:nth-child(5n+1) .pill { background: var(--orange); }
+  .tl div:nth-child(5n+2) .pill { background: var(--yellow); color: #000; }
+  .tl div:nth-child(5n+3) .pill { background: var(--blue); }
+  .tl div:nth-child(5n+4) .pill { background: var(--green); }
+  .tl div:nth-child(5n+5) .pill { background: var(--purple); }
+  .tl p { font-size: 15pt; line-height: 1.3; margin: 3mm 3mm 0; }
+
+  /* ---------- 7. closing panel (template: "Thank you" on yellow) ---------- */
+  .foot { margin-top: 12mm; background: var(--yellow); padding: 10mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
+  .qr { width: 92mm; text-align: center; }
   .qr img { display: block; width: 100%; background: #fff; border-radius: 6mm; padding: 4mm; }
-  .qr span { display: block; font: 700 18pt/1.2 var(--font-body); margin-top: 3mm; color: var(--surf-orange); }
-  .foot h2 { font-size: 52pt; line-height: 1.05; }
-  .foot .url { font: 700 26pt/1.3 var(--font-body); color: var(--surf-orange); margin: 4mm 0 0; }
-  .foot .small { font-size: 18pt; color: #d4d4d4; margin-top: 6mm; line-height: 1.35; }
+  .qr span { display: block; font: 800 18pt/1.2 var(--font-display); margin-top: 3mm; }
+  .foot h2 { font-size: 42pt; line-height: 1.05; }
+  .foot .url { font: 700 24pt/1.3 var(--font-body); margin: 4mm 0 0; }
+  .foot .small { font-size: 16pt; color: #1a1a1a; margin-top: 5mm; line-height: 1.35; }
+  .foot .logo { width: 60mm; margin-top: 6mm; display: block; }
 </style>
 </head>
 <body>
@@ -129,103 +173,143 @@
 <div class="stage"><div class="scaler" id="scaler">
 <article class="poster" id="poster">
 
-  <!-- ===== HEADER ===== -->
-  <header class="head">
+  <!-- ===== 1. COVER ===== -->
+  <header class="cover">
     <div>
       <p class="eyebrow">Barcelona Declaration Conference · Berlin · 24–25 November 2026</p>
-      <h1>Where do PIDs<br>actually break?</h1>
+      <h1>Where do PIDs actually break?</h1>
       <p class="sub">ORI Quality Monitoring: lessons from monitoring and improving the quality of Dutch open research information</p>
       <p class="authors"><strong>Maurice Vanderfeesten</strong> · SURF · maurice.vanderfeesten@surf.nl</p>
+      <img class="logo" src="../assets/img/surf-logo.svg" alt="SURF">
     </div>
-    <img class="logo" src="../assets/img/SURF_diap.svg" alt="SURF">
+    <div class="collage" aria-hidden="true">
+      <span class="b-yellow"></span>
+      <span class="b-orange"></span>
+      <span class="b-peach"></span>
+      <span class="b-green"></span>
+      <span class="b-blue"></span>
+      <figure class="shot"><img src="../assets/img/ori-dashboard.jpg" alt=""></figure>
+    </div>
   </header>
 
-  <!-- ===== PITCH ===== -->
-  <section class="pitch">
-    <p class="quote">A dashboard that turns Barcelona Declaration commitments into concrete, institution-level goals.</p>
-    <div>
-      <p>Co-designed with the Dutch Barcelona Declaration signatories, so what gets measured reflects where better metadata brings real value, and what it takes to close the gaps.</p>
-      <div class="badges">
-        <span class="badge">Live since September 2026</span>
-        <span class="badge">18 organisations</span>
-        <span class="badge">Fully open stack</span>
-      </div>
-    </div>
+  <!-- ===== 2. AMBITION ===== -->
+  <section class="ambition">
+    <p class="label">Ambition</p>
+    <p class="statement">Turn Barcelona Declaration commitments into concrete, institution-level goals for better open research information</p>
+    <p>The ORI dashboard was co-designed with the Dutch Barcelona Declaration signatories, so what gets measured reflects where better metadata brings real value, and what it takes to close the gaps.</p>
   </section>
 
-  <!-- ===== JOURNEY: consultation → metrics → dashboard ===== -->
-  <section class="journey">
-    <h2 class="section-title">From consultation to metrics to dashboard</h2>
-    <div class="steps">
-      <div class="step">
-        <span class="num">1</span>
-        <h3>Consultation</h3>
-        <p>14 use cases from 10 organisations: reporting, assessment and analysis. Fix three elements first: <b>DOIs</b>, <b>ROR</b> and <b>ORCID</b>.</p>
-        <p class="ref">Framework report · doi.org/10.5281/zenodo.18667698</p>
+  <!-- ===== 3. PROCESS ===== -->
+  <section class="process">
+    <h2 class="bar-title">From consultation to metrics to dashboard</h2>
+    <div class="chevrons">
+      <div class="chev">
+        <img class="icon" src="../assets/icons/collaboration-03.png" alt="">
+        <div class="arrow">Consult</div>
+        <h3>14 use cases</h3>
+        <p>From 10 organisations. Fix three elements first: <b>DOIs</b>, <b>ROR</b> and <b>ORCID</b>.</p>
+        <p class="ref">doi.org/10.5281/zenodo.18667698</p>
       </div>
-      <div class="step">
-        <span class="num">2</span>
+      <div class="chev">
+        <img class="icon" src="../assets/icons/research-03.png" alt="">
+        <div class="arrow">Measure</div>
         <h3>Metrics</h3>
-        <p>What to measure and how, comparing CRIS with OpenAlex, OpenAIRE and Crossref. Every gap is linked to an intervention, with its effort and impact.</p>
-        <p class="ref">Metrics report · doi.org/10.5281/zenodo.23682960</p>
+        <p>What to measure and how: CRIS compared with OpenAlex, OpenAIRE and Crossref.</p>
+        <p class="ref">doi.org/10.5281/zenodo.23682960</p>
       </div>
-      <div class="step">
-        <span class="num">3</span>
+      <div class="chev">
+        <img class="icon" src="../assets/icons/research-20.png" alt="">
+        <div class="arrow">Monitor</div>
         <h3>Dashboard</h3>
-        <p>Pick your organisation, source and entity type. See your gaps on four dimensions and decide where to act. Onboarding for signatories this autumn.</p>
+        <p>Your gaps on four dimensions, each linked to interventions with effort and impact.</p>
         <p class="ref">ori-dashboard.surf.nl</p>
       </div>
+      <div class="chev">
+        <img class="icon" src="../assets/icons/collaboration-09.png" alt="">
+        <div class="arrow">Improve</div>
+        <h3>Set goals</h3>
+        <p>Onboarding helps signatories set goals and track their interventions.</p>
+        <p class="ref">18 organisations taking part</p>
+      </div>
     </div>
   </section>
 
-  <!-- ===== FOUR QUESTIONS ===== -->
+  <!-- ===== 4. FOUR QUESTIONS ===== -->
   <section class="dims">
-    <h2 class="section-title">Four questions every institution can now answer<small>Example views from the dashboard (illustrative data, from the metrics report)</small></h2>
+    <h2 class="bar-title">Four questions every institution can now answer<small>Example views from the dashboard (illustrative data, from the metrics report)</small></h2>
     <div class="dim-grid">
       <div class="dim">
-        <h3><span class="tag">Coverage</span>Is our output in the open indexes?</h3>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-10.png" alt=""></span><div><span class="kicker">Coverage</span><h3>Is our output in the open indexes?</h3></div></div>
         <p>Records only in your CRIS, in both, or only in OpenAlex, Crossref or OpenAIRE.</p>
-        <figure class="frame grow"><img src="../assets/img/dashboard/coverage.jpg" alt="Coverage tab: CRIS compared with OpenAlex, Crossref and OpenAIRE"></figure>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/coverage.jpg" alt="Coverage tab: CRIS compared with OpenAlex, Crossref and OpenAIRE"></figure>
       </div>
       <div class="dim">
-        <h3><span class="tag">Completeness</span>How many records lack an ORCID?</h3>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/research-17.png" alt=""></span><div><span class="kicker">Completeness</span><h3>How many records lack an ORCID?</h3></div></div>
         <p>The share of records with a valid DOI, ORCID, ROR, grant DOI, ISSN, OA status and corresponding author.</p>
-        <figure class="frame grow"><img src="../assets/img/dashboard/completeness.jpg" alt="Completeness tab: share of records per metadata field"></figure>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/completeness.jpg" alt="Completeness tab: share of records per metadata field"></figure>
       </div>
       <div class="dim">
-        <h3><span class="tag">Enrichment</span>What can other sources fill in?</h3>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-02.png" alt=""></span><div><span class="kicker">Enrichment</span><h3>What can other sources fill in?</h3></div></div>
         <p>Missing values in your source that OpenAIRE or OpenAlex already have, ready to recover.</p>
-        <figure class="frame grow"><img src="../assets/img/dashboard/enrichment.jpg" alt="Enrichment tab: missing RORs that can be recovered from OpenAIRE and OpenAlex"></figure>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/enrichment.jpg" alt="Enrichment tab: missing RORs that can be recovered from OpenAIRE and OpenAlex"></figure>
       </div>
       <div class="dim">
-        <h3><span class="tag">Accuracy</span>Is that ROR affiliation right?</h3>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-03.png" alt=""></span><div><span class="kicker">Accuracy</span><h3>Is that ROR affiliation right?</h3></div></div>
         <p>Where sources disagree, and which one is wrong: checked against raw affiliation strings.</p>
-        <figure class="frame grow"><img src="../assets/img/dashboard/accuracy-agreement.jpg" alt="Accuracy tab: conflicts and agreement between CRIS and OpenAlex"></figure>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/accuracy-agreement.jpg" alt="Accuracy tab: conflicts and agreement between CRIS and OpenAlex"></figure>
       </div>
     </div>
   </section>
 
-  <!-- ===== OPEN STACK + REFLECTIONS ===== -->
-  <section class="lower">
-    <div class="box">
-      <h2>Fully open, behind the scenes</h2>
+  <!-- ===== 5. TILES: open stack + reflections ===== -->
+  <section class="tiles">
+    <div class="tile t-blue">
+      <img class="icon" src="../assets/icons/data-14.png" alt="">
+      <h3>Fully open, behind the scenes</h3>
       <ul>
-        <li>A public data lake (DuckLake, Parquet, SURF Object Store) with <b>OpenAlex, OpenAIRE, CRIS and OpenAPC</b>: every number is reproducible.</li>
-        <li>Open pipelines from raw snapshots to bronze, silver and gold.</li>
-        <li>Described for humans and AI: skills and an MCP server let non-technical users build transparent, auditable reports.</li>
+        <li>A public data lake with OpenAlex, OpenAIRE, CRIS and OpenAPC: every number is reproducible.</li>
+        <li>Skills and an MCP server let non-technical users build auditable reports.</li>
       </ul>
     </div>
-    <div class="box">
-      <h2>Reflections</h2>
-      <div class="reflect">
-        <div><h3>What worked</h3><ul><li>Co-design gave metrics that institutions recognise.</li><li>Linking gaps to effort shows where to act.</li></ul></div>
-        <div><h3>What was hard</h3><ul><li>Accuracy has no single ground truth.</li><li>Feedback loops: sources copy each other, and their errors.</li></ul></div>
-        <div><h3>What's next</h3><ul><li>BROCCOLI maintains the dashboard and data lake.</li><li>Long-term governance in DURF.</li></ul></div>
-      </div>
+    <div class="tile t-yellow">
+      <img class="icon" src="../assets/icons/research-14.png" alt="">
+      <h3>What worked</h3>
+      <ul>
+        <li>Co-design gave metrics that institutions recognise.</li>
+        <li>Linking gaps to effort shows where to act.</li>
+      </ul>
+    </div>
+    <div class="tile t-orange">
+      <img class="icon" src="../assets/icons/research-19.png" alt="">
+      <h3>What was hard</h3>
+      <ul>
+        <li>Accuracy has no single ground truth.</li>
+        <li>Sources copy each other, and their errors.</li>
+      </ul>
+    </div>
+    <div class="tile t-green">
+      <img class="icon" src="../assets/icons/data-15.png" alt="">
+      <h3>What's next</h3>
+      <ul>
+        <li>BROCCOLI maintains the dashboard and data lake.</li>
+        <li>Long-term governance in DURF.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ===== 6. TIMELINE ===== -->
+  <section class="timeline">
+    <div class="tl">
+      <div><span class="pill">Sep 2025</span><p>Project start, funded by UNL</p></div>
+      <div><span class="pill">Feb 2026</span><p>Framework report</p></div>
+      <div><span class="pill">Apr 2026</span><p>Data lake filled, AI tools</p></div>
+      <div><span class="pill">Sep 2026</span><p>Dashboard in production</p></div>
+      <div><span class="pill">Oct 2026</span><p>Metrics report, onboarding</p></div>
+      <div><span class="pill">Nov 2026</span><p>Berlin: your feedback</p></div>
+    </div>
+  </section>
+
+  <!-- ===== 7. CLOSING PANEL ===== -->
   <footer class="foot">
     <div class="qr"><img src="qr-ori-dashboard.svg" alt="QR code to the ORI dashboard"><span>Try the dashboard</span></div>
     <div>

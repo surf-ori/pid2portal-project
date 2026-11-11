@@ -172,7 +172,8 @@
       grid.appendChild(text);
       if (meta.image) {
         var vis = el("div", "hero-visual");
-        vis.innerHTML =
+        // Template cover: coloured rounded blocks behind the screenshots.
+        vis.innerHTML = '<span class="blk blk-orange" aria-hidden="true"></span><span class="blk blk-yellow" aria-hidden="true"></span><span class="blk blk-green" aria-hidden="true"></span><span class="blk blk-peach" aria-hidden="true"></span>' +
           '<figure class="frame frame-a"><img src="' + meta.image + '" alt="' + escapeHtml(meta["image-alt"] || "") + '"></figure>' +
           (meta.image2 ? '<figure class="frame frame-b"><img src="' + meta.image2 + '" alt="' + escapeHtml(meta["image2-alt"] || "") + '"></figure>' : "");
         grid.appendChild(vis);
@@ -271,6 +272,37 @@
       });
       grid.appendChild(side);
       inner.appendChild(grid);
+    },
+
+    statement: function (frag, meta, inner) {
+      // Template "ambition" slide: label between two lines, one big statement.
+      var box = el("div", "statement");
+      if (meta.eyebrow) box.appendChild(el("p", "statement-label", escapeHtml(meta.eyebrow)));
+      Array.prototype.slice.call(frag.childNodes).forEach(function (n) {
+        if (n.tagName === "P" && !box.querySelector(".statement-text")) n.className = "statement-text";
+        box.appendChild(n);
+      });
+      inner.appendChild(box);
+    },
+
+    timeline: function (frag, meta, inner) {
+      // Template "timeline": a line with coloured date pills, text under each.
+      var intro = [];
+      var list = null;
+      Array.prototype.slice.call(frag.childNodes).forEach(function (n) {
+        if (n.tagName === "UL" && !list) list = n; else if (n.nodeType !== 3 || n.textContent.trim()) intro.push(n);
+      });
+      inner.appendChild(sectionHeader(meta, intro));
+      var ol = el("ol", "timeline");
+      if (list) Array.prototype.slice.call(list.children).forEach(function (li) {
+        var item = el("li", "tl-item");
+        var strong = li.querySelector("strong");
+        if (strong) { item.appendChild(el("span", "tl-pill", strong.innerHTML)); strong.remove(); }
+        item.appendChild(el("span", "tl-text", li.innerHTML.trim()));
+        ol.appendChild(item);
+      });
+      ol.style.setProperty("--n", ol.children.length);
+      inner.appendChild(ol);
     },
 
     band: function (frag, meta, inner) {
