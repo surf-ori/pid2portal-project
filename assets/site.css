@@ -264,6 +264,15 @@ code { font-family: var(--font-mono); font-size: 0.9em; }
 
 /* ---------- prose ---------- */
 .prose { max-width: 760px; }
+/* acknowledgements: people with ORCID icon and institution (ROR) */
+.layout-prose .section-head { max-width: 860px; margin-bottom: 0; }
+.layout-prose h3 { margin-top: var(--space-6); }
+.layout-prose ul { padding-left: 1.2em; margin: 0; }
+.layout-prose li { margin-bottom: var(--space-3); color: var(--fg-2); }
+.layout-prose li::marker { color: var(--surf-orange); }
+.layout-prose li strong { color: var(--fg-1); }
+a.orcid { display: inline-block; vertical-align: -2px; margin: 0 2px 0 4px; line-height: 0; }
+a.orcid img { width: 16px; height: 16px; display: block; }
 
 /* ---------- footer ---------- */
 .site-footer { background: #000; color: #d4d4d4; padding: var(--space-8) 0; margin-top: var(--space-8); }
