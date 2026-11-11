@@ -26,12 +26,13 @@ tags: Governance
 
 ![DURF: Dutch Repository Federation](assets/img/durf.jpg)
 
-The DURF project continues to coordinate governance, financial sustainability and technical alignment for the Netherlands Research Portal.
+PID2Portal laid the groundwork for better governance and funding of the Netherlands Research Portal. The DURF project carries this forward, coordinating governance, financial sustainability and technical alignment.
 
 - **Governance:** VU initially chairs the national consortium (rolling chair), with rules of participation on the agenda.
 - **Financial:** SURF and UKB are working on a service agreement to share the costs of technical and functional maintenance.
 - **Technical:** KB, WISH and the Pure user groups align on technical standards.
 
+- [Visit the DURF project](https://durf-project.github.io/)
 - [View the DURF roadmap](https://durf-project.github.io/durf-gantt/)
 
 ### A national OpenAIRE consortium
