@@ -272,6 +272,10 @@ code { font-family: var(--font-mono); font-size: 0.9em; }
 .layout-prose li { margin-bottom: var(--space-3); color: var(--fg-2); }
 .layout-prose li::marker { color: var(--surf-orange); }
 .layout-prose li strong { color: var(--fg-1); }
+/* commons: highlighted quote */
+.layout-prose blockquote { margin: var(--space-5) 0; padding: var(--space-4) var(--space-5); border-left: 5px solid var(--surf-orange); background: var(--bg-accent-soft); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+.layout-prose blockquote p { margin: 0; font-style: normal; font-family: var(--font-display); font-weight: 700; font-size: clamp(18px, 1.8vw, 22px); line-height: 1.35; color: var(--fg-1); }
+#commons { background: var(--bg-2); }
 a.orcid { display: inline-block; vertical-align: -2px; margin: 0 2px 0 4px; line-height: 0; }
 a.orcid img { width: 16px; height: 16px; display: block; }
 

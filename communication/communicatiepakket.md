@@ -26,6 +26,7 @@ Inhoud:
 - **Better metadata, better decisions.** Dat is de rode draad: betere metadata leidt tot betere analyses en beslissingen.
 - Alle resultaten van PID2Portal staan op één plek: een ORI-dashboard, een open datalake, twee rapporten en een grondslag voor beter beheer en betere financiering van het Netherlands Research Portal.
 - We vullen geen ORCIDs en RORs om de ORCIDs en RORs. Betere metadata geeft instellingen analyses en strategische rapportages waar ze op kunnen vertrouwen.
+- **Open research information is een gedeelde hulpbron, een commons.** Geen enkele instelling bezit het, iedereen draagt eraan bij en iedereen is ervan afhankelijk. Die gedeelde hulpbron benoemen is de eerste stap om hem samen goed te onderhouden.
 - Gebouwd met en voor de Nederlandse ondertekenaars van de Barcelona Declaration; 18 organisaties doen mee in het dashboard.
 - Het dashboard laat niet alleen het gat zien, maar ook de interventies om het te dichten, met effort en impact. Deel jouw aanpak, dan bouwen we samen een lijst op.
 - Alles is open: code, data en rapporten. Het werk gaat verder in BROCCOLI (dashboard en datalake) en DURF (beheer en financiering van het portaal).
@@ -34,6 +35,7 @@ Inhoud:
 - **Better metadata, better decisions.** That is the common thread: better metadata leads to better analyses and decisions.
 - All PID2Portal results in one place: an ORI dashboard, an open data lake, two reports and a foundation for better governance and funding of the Netherlands Research Portal.
 - We don't fill in ORCIDs and RORs for the sake of ORCIDs and RORs. Better metadata gives institutions analyses and strategic reports they can trust.
+- **Open research information is a shared resource, a commons.** No single institution owns it; everyone contributes to it and everyone depends on it. Naming that shared resource is the first step in taking care of it together.
 - Built with and for the Dutch signatories of the Barcelona Declaration; 18 organisations take part in the dashboard.
 - The dashboard shows not only the gap, but also the interventions that close it, scored on effort and impact. Share your approach and we build the list together.
 - Everything is open: code, data and reports. The work continues in BROCCOLI (dashboard and data lake) and DURF (portal governance and funding).
@@ -56,7 +58,7 @@ In twaalf maanden hebben we, met €190k van UNL en samen met de Nederlandse ond
 - twee rapporten: het **ORI framework** en de **ORI metrics**;
 - een grondslag voor beter beheer en betere financiering van het **Netherlands Research Portal**, die wordt voortgezet in het [DURF-project](http://durf-project.github.io/).
 
-Het gaat ons daarbij niet om ORCIDs en RORs vullen om de ORCIDs en RORs. Betere metadata geeft instellingen analyses en strategische rapportages waar ze op kunnen vertrouwen. Kortom: *better metadata, better decisions*.
+Het gaat ons daarbij niet om ORCIDs en RORs vullen om de ORCIDs en RORs. Betere metadata geeft instellingen analyses en strategische rapportages waar ze op kunnen vertrouwen. Kortom: *better metadata, better decisions*. Open research information is een gedeelde hulpbron, een commons: we dragen er allemaal aan bij en we zijn er allemaal van afhankelijk, dus we moeten er ook samen goed voor zorgen.
 
 Welke aanpak werkt bij jou? Deel je interventies, met wat ze kostten en wat ze opleverden, via de Feedback-knop op de website. Zo bouwen we samen een lijst van interventies op, gescoord op effort en impact.
 
@@ -89,7 +91,7 @@ In twelve months, funded with €190k by Universities of the Netherlands and tog
 - two reports: the **ORI framework** and the **ORI metrics**;
 - a foundation for better governance and funding of the **Netherlands Research Portal**, carried forward in the [DURF project](http://durf-project.github.io/).
 
-It is not about filling in ORCIDs and RORs for the sake of ORCIDs and RORs. Better metadata gives institutions analyses and strategic reports they can trust. In short: *better metadata, better decisions*.
+It is not about filling in ORCIDs and RORs for the sake of ORCIDs and RORs. Better metadata gives institutions analyses and strategic reports they can trust. In short: *better metadata, better decisions*. Open research information is a shared resource, a commons: we all contribute to it and we all depend on it, so we have to take good care of it together.
 
 Which approach works for you? Share your interventions, with what they cost and what they brought, through the Feedback button on the website. Together we build a shared list of interventions, scored on effort and impact.
 
@@ -121,6 +123,10 @@ In October 2025 we kicked off PID to Portal, funded by Universities of the Nethe
 ### Why it matters: better metadata, better decisions
 
 We don't fill in ORCIDs and RORs for the sake of ORCIDs and RORs. Better metadata gives institutions analyses and strategic reports they can trust: open access monitoring that counts everything, analyses per researcher or partner that hold up, and benchmarks that credit the right institution.
+
+### A commons we take care of together
+
+Open research information is a shared resource. No single institution owns it: every university contributes to it, and every university depends on it. Naming that shared resource is the first step in organising a commons, as the report [Organizing Research as a Commons](https://doi.org/10.5281/zenodo.21526773) explains. A commons only stays healthy when the community that uses it also takes care of it: agreeing what good looks like, measuring it in the open, and each doing their part to improve it at the source. For the Netherlands Research Portal, DURF now organises this as a research commons. For open research information itself, PID2Portal lays the groundwork.
 
 ### Built with and for the signatories
 
@@ -182,6 +188,10 @@ In oktober 2025 gingen we van start met PID to Portal, gefinancierd door Univers
 
 We vullen geen ORCIDs en RORs om de ORCIDs en RORs. Betere metadata geeft instellingen analyses en strategische rapportages waar ze op kunnen vertrouwen: open access-monitoring die alles meetelt, analyses per onderzoeker of partner die standhouden, en benchmarks die de juiste instelling crediteren.
 
+### Een commons waar we samen voor zorgen
+
+Open research information is een gedeelde hulpbron. Geen enkele instelling bezit het: elke universiteit draagt eraan bij, en elke universiteit is ervan afhankelijk. Die gedeelde hulpbron benoemen is de eerste stap in het organiseren van een commons, zoals het rapport [Organizing Research as a Commons](https://doi.org/10.5281/zenodo.21526773) uitlegt. Een commons blijft alleen gezond als de gemeenschap die hem gebruikt er ook voor zorgt: samen afspreken wat goed is, het open meten, en ieder zijn deel doen om het bij de bron te verbeteren. Voor het Netherlands Research Portal organiseert DURF dit nu als research commons. Voor open research information zelf legt PID2Portal de basis.
+
 ### Gebouwd met en voor de ondertekenaars
 
 De Nederlandse ondertekenaars van de Barcelona Declaration on Open Research Information hebben elke stap vormgegeven. Hun research intelligence-, bibliotheek- en CRIS-teams brachten 14 use cases in, bepaalden welke metadata het zwaarst weegt (DOI's, ROR en ORCID), testten het dashboard en gebruiken het nu om hun eigen doelen te stellen. Achttien organisaties doen inmiddels mee in het dashboard.
@@ -237,6 +247,8 @@ We hebben dit samen gebouwd, en het wordt alleen beter als we het samen blijven 
 >
 > We vullen geen ORCIDs en RORs om de ORCIDs en RORs. Betere metadata geeft instellingen analyses en strategische rapportages waar ze op kunnen vertrouwen.
 >
+> Open research information is een gedeelde hulpbron, een commons. Daar zorgen we samen voor.
+>
 > Welke aanpak werkt bij jou om metadata te verbeteren? Deel je interventie via de Feedback-knop op de site.
 >
 > Dank aan Rutger de Jong, Ana Ranitovic, Till Bey, Bianca Kramer en alle Nederlandse Barcelona Declaration-ondertekenaars, en aan Joeri Both, Eileen Waegemaekers, John Doove en Darco Jansen.
@@ -255,6 +267,8 @@ We hebben dit samen gebouwd, en het wordt alleen beter als we het samen blijven 
 > In twelve months, together with the Dutch signatories of the Barcelona Declaration, we built an ORI data quality dashboard, an open data lake with 2 TB of open research information, two reports and a foundation for better governance and funding of the Netherlands Research Portal, carried forward by DURF.
 >
 > We don't fill in ORCIDs and RORs for the sake of ORCIDs and RORs. Better metadata gives institutions analyses and strategic reports they can trust.
+>
+> Open research information is a shared resource, a commons. We take care of it together.
 >
 > Which approach works for you to improve your metadata? Share your intervention through the Feedback button on the site.
 >
@@ -300,6 +314,8 @@ We hebben dit samen gebouwd, en het wordt alleen beter als we het samen blijven 
 | Poster op Zenodo (DOI) | https://doi.org/10.5281/zenodo.24132076 |
 | Onboarding aanvragen, algemene vragen en feedback | ori@surf.nl |
 | Persoonlijk contact (mails, poster) | maurice.vanderfeesten@surf.nl |
+| Organizing Research as a Commons (achtergrond commons) | https://doi.org/10.5281/zenodo.21526773 |
+| DURF position paper | https://durf-project.github.io/position-paper/ |
 | Acknowledgements (namen, rollen, ORCID iD's) | https://surf-ori.github.io/pid2portal-project/#acknowledgements |
 
 **Headers (Better metadata, better decisions)**
