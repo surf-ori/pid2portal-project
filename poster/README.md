@@ -6,6 +6,7 @@ Poster for the [Barcelona Declaration conference](https://barcelona-declaration.
 - `ori-monitor-poster-A0.pdf`: print-ready export of the current version.
 - `qr-ori-dashboard.svg`: QR code to https://ori-dashboard.surf.nl/
 - `qr-pid2portal.svg` / `.png`: QR code to https://surf-ori.github.io/pid2portal-project/
+- `qr-share-intervention.svg`: QR code to https://github.com/surf-ori/ori-dashboard/issues/new/choose, to share an intervention
 
 The dashboard images in `../assets/img/dashboard/`: `live-*.jpg` are captured from the live dashboard (ori-dashboard.surf.nl, November 2026, one participating institution, at 3× resolution); Accuracy comes from the mockup, because the live feed does not publish it yet. The organisation list on the poster is the list of participating organisations on the dashboard. `accuracy-mockup.jpg` and `interventions-mockup.jpg` are captured from the dashboard mockup (ori-dashboard.lovable.app) at 3× resolution; the effort × impact examples on the poster come from the metrics report, Tables 10–13 (AI-generated examples, a starting point for discussion).
 

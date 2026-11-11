@@ -169,7 +169,9 @@
   .act-call .icon { width: 30mm; height: 30mm; margin-bottom: 4mm; }
   .act-call h3 { font-size: 30pt; line-height: 1.08; margin-bottom: 4mm; }
   .act-call p { font-size: 18pt; line-height: 1.35; }
-  .act-call .cta { margin-top: auto; margin-bottom: 0; font: 800 20pt/1.2 var(--font-display); }
+  .act-call .cta { margin-top: auto; display: flex; gap: 5mm; align-items: center; }
+  .act-call .cta img { width: 42mm; height: 42mm; background: #fff; border-radius: 3mm; padding: 2mm; flex: none; }
+  .act-call .cta p { margin: 0; font: 800 18pt/1.2 var(--font-display); }
 
   /* ---------- 6. reflections, slim ---------- */
   .reflect-row { padding: 9mm var(--pad) 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 7mm; }
@@ -333,7 +335,10 @@
         <h3>Which approach works for you?</h3>
         <p>What did you try, what did it cost and what did it bring? Let's compare approaches between the signatories.</p>
         <p><b>Together we build a shared list of interventions, each scored on effort and impact.</b></p>
-        <p class="cta">Share yours at this poster →</p>
+        <div class="cta">
+          <img src="qr-share-intervention.svg" alt="QR code to share an intervention in the ORI dashboard repository">
+          <p>Share yours at this poster, or online: scan to add your intervention</p>
+        </div>
       </div>
     </div>
   </section>
@@ -359,6 +364,7 @@
 </article>
 </div></div>
 
+<script src="../assets/feedback.js" defer></script>
 <script>
   (function () {
     var scaler = document.getElementById("scaler");
