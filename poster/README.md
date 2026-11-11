@@ -7,7 +7,7 @@ Poster for the [Barcelona Declaration conference](https://barcelona-declaration.
 - `qr-ori-dashboard.svg`: QR code to https://ori-dashboard.surf.nl/
 - `qr-pid2portal.svg` / `.png`: QR code to https://surf-ori.github.io/pid2portal-project/
 
-The dashboard screenshots in `../assets/img/dashboard/` (the `*-focus.jpg` crops on the poster) come from the metrics report (doi.org/10.5281/zenodo.23682960) and show illustrative data.
+The dashboard images in `../assets/img/dashboard/`: `live-*.jpg` are captured from the live dashboard (ori-dashboard.surf.nl, November 2026, one participating institution, at 3× resolution); `accuracy-focus.jpg` is an illustrative view from the metrics report (doi.org/10.5281/zenodo.23682960), because the live feed does not publish accuracy yet. The organisation list on the poster is the list of participating organisations on the dashboard.
 
 ## Editing
 

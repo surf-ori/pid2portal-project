@@ -68,19 +68,19 @@
   /* ---------- 1. cover: title + composition of rounded blocks ---------- */
   .cover { position: relative; padding: 22mm var(--pad) 14mm; display: grid; grid-template-columns: 1fr 330mm; gap: 12mm; align-items: center; }
   .eyebrow { font: 700 22pt/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--orange); margin-bottom: 7mm; }
-  .cover h1 { font-size: 104pt; font-weight: 900; line-height: .98; }
+  .cover h1 { font-size: 96pt; font-weight: 900; line-height: .98; }
   .cover .sub { font-size: 30pt; line-height: 1.22; margin-top: 8mm; color: #1a1a1a; }
   .authors { font-size: 22pt; margin-top: 9mm; color: #3a3a3a; }
   .authors strong { color: #000; }
-  .cover .logo { width: 60mm; margin-top: 8mm; display: block; }
-  .collage { position: relative; height: 175mm; }
+  .cover .logo { width: 52mm; margin-top: 6mm; display: block; }
+  .collage { position: relative; height: 140mm; }
   .collage > * { position: absolute; border-radius: 9mm; }
-  .collage .b-orange { left: 0; top: 12mm; width: 120mm; height: 85mm; background: var(--orange); }
-  .collage .b-yellow { right: 8mm; top: 0; width: 95mm; height: 55mm; background: var(--yellow); }
-  .collage .b-green  { left: 22mm; bottom: 0; width: 105mm; height: 40mm; background: var(--green); }
-  .collage .b-peach  { right: 0; bottom: 4mm; width: 60mm; height: 85mm; background: var(--peach); }
+  .collage .b-orange { left: 0; top: 4mm; width: 110mm; height: 70mm; background: var(--orange); }
+  .collage .b-yellow { right: 8mm; top: 0; width: 90mm; height: 45mm; background: var(--yellow); }
+  .collage .b-green  { left: 22mm; bottom: 0; width: 100mm; height: 30mm; background: var(--green); }
+  .collage .b-peach  { right: 0; bottom: 0; width: 60mm; height: 70mm; background: var(--peach); }
   .collage .b-blue   { right: 40mm; bottom: 5mm; width: 50mm; height: 40mm; border: 2mm solid var(--blue); background: transparent; }
-  .collage .shot { left: 30mm; top: 24mm; width: 270mm; height: 135mm; overflow: hidden; border: 2.5mm solid #000; background: #fff; }
+  .collage .shot { left: 34mm; top: 18mm; width: 250mm; height: 112mm; overflow: hidden; border: 2.5mm solid #000; background: #fff; }
   .collage .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
 
   /* ---------- 2. ambition (template: purple ambition slide) ---------- */
@@ -102,7 +102,7 @@
   .members li:nth-child(4n+3) { background: #d6e9f5; }
   .members li:nth-child(4n+4) { background: #d4ecdd; }
   .note { font-size: 14pt; color: #3a3a3a; }
-  .why { display: block; margin-top: 2mm; color: #b85b00; }
+  .why { display: block; color: #b85b00; font-size: 19pt; }
 
   /* ---------- 3. process chevrons (template: "Process – 4 steps") ---------- */
   .process { padding: 13mm var(--pad) 0; }
@@ -124,9 +124,9 @@
   .chev .ref { font-size: 14pt; color: #3a3a3a; }
 
   /* ---------- 4. four questions on a peach panel ---------- */
-  .dims { margin: 12mm var(--pad) 0; padding: 12mm 14mm 14mm; background: var(--peach); border-radius: 12mm; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
-  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 9mm 12mm; flex: 1 1 0; min-height: 0; }
-  .dim { display: flex; flex-direction: column; min-height: 0; background: #fff; border-radius: 9mm; padding: 7mm 8mm 8mm; }
+  .dims { margin: 10mm var(--pad) 0; padding: 10mm 12mm 12mm; background: var(--peach); border-radius: 12mm; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1.25fr 1fr; gap: 9mm 12mm; flex: 1 1 0; min-height: 0; }
+  .dim { display: flex; flex-direction: column; min-height: 0; background: #fff; border-radius: 9mm; padding: 6mm 7mm 7mm; }
   .dim-head { display: flex; gap: 5mm; align-items: center; }
   .chip { flex: none; width: 30mm; height: 30mm; border-radius: 6mm; display: grid; place-items: center; }
   .chip img { width: 22mm; height: 22mm; filter: invert(1); }
@@ -137,7 +137,7 @@
   .dim .kicker { font: 700 16pt/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: #3a3a3a; }
   .dim h3 { font-size: 28pt; line-height: 1.1; margin-top: 1.5mm; }
   .dim p { font-size: 17pt; line-height: 1.35; margin: 4mm 0 4mm; color: #1a1a1a; }
-  .shot-frame { flex: 1 1 0; min-height: 35mm; display: flex; border: 1.2mm solid #000; border-radius: 6mm; overflow: hidden; background: #fff; margin: 0; }
+  .shot-frame { flex: 1 1 0; min-height: 35mm; display: flex; border: 0; border-radius: 6mm; overflow: hidden; background: #fff; margin: 0; }
   .shot-frame img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
 
   /* ---------- 5. tiles (template: "status of project") ---------- */
@@ -166,8 +166,8 @@
   .tl p { font-size: 15pt; line-height: 1.3; margin: 3mm 3mm 0; }
 
   /* ---------- 7. closing panel (template: "Thank you" on yellow) ---------- */
-  .foot { margin-top: 12mm; background: var(--yellow); padding: 10mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
-  .qr { width: 92mm; text-align: center; }
+  .foot { margin-top: 10mm; background: var(--yellow); padding: 8mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
+  .qr { width: 78mm; text-align: center; }
   .qr img { display: block; width: 100%; background: #fff; border-radius: 6mm; padding: 4mm; }
   .qr span { display: block; font: 800 18pt/1.2 var(--font-display); margin-top: 3mm; }
   .foot h2 { font-size: 42pt; line-height: 1.05; }
@@ -223,11 +223,26 @@
     </div>
     <div>
       <ul class="members">
-        <li>Leiden University</li><li>Maastricht University</li><li>Utrecht University</li><li>Vrije Universiteit Amsterdam</li>
-        <li>University of Amsterdam</li><li>University of Groningen</li><li>TU Delft</li><li>UNL</li><li>UKB</li><li>KB</li>
-        <li>NWO / Open Science NL</li><li>ZonMw</li><li>KNAW</li><li>Netherlands eScience Center</li><li>Vereniging Hogescholen</li><li>SURF</li><li>…and more</li>
+        <li>University of Amsterdam</li>
+        <li>Maastricht University</li>
+        <li>University of Groningen</li>
+        <li>Hanze University of Applied Sciences Groningen</li>
+        <li>Amsterdam University of Applied Sciences</li>
+        <li>Vrije Universiteit Amsterdam</li>
+        <li>University of Twente</li>
+        <li>Protestant Theological University</li>
+        <li>Amsterdam UMC, location VUmc</li>
+        <li>Eindhoven University of Technology</li>
+        <li>Utrecht University</li>
+        <li>Open University</li>
+        <li>Amsterdam UMC, location AMC</li>
+        <li>Erasmus University Rotterdam</li>
+        <li>NHTV Breda University of Applied Sciences</li>
+        <li>Royal Netherlands Academy of Arts and Sciences</li>
+        <li>University of Humanistic Studies</li>
+        <li>Tilburg University</li>
       </ul>
-      <p class="note">Members of the Netherlands Barcelona Declaration Network, early 2026</p>
+      <p class="note">The 18 organisations taking part in the ORI dashboard (ori-dashboard.surf.nl, November 2026)</p>
     </div>
   </section>
 
@@ -240,54 +255,50 @@
         <div class="arrow">Consult</div>
         <h3>Use cases first</h3>
         <p>Signatories brought 14 use cases, such as open access monitoring and linking sources. They point to <b>DOIs</b>, <b>ROR</b> and <b>ORCID</b>.</p>
-        <p class="ref">doi.org/10.5281/zenodo.18667698</p>
       </div>
       <div class="chev">
         <img class="icon" src="../assets/icons/research-03.svg" alt="">
         <div class="arrow">Measure</div>
         <h3>Metrics that matter</h3>
         <p>Measure only what the use cases need: CRIS compared with OpenAlex, OpenAIRE and Crossref.</p>
-        <p class="ref">doi.org/10.5281/zenodo.23682960</p>
       </div>
       <div class="chev">
         <img class="icon" src="../assets/icons/research-20.svg" alt="">
         <div class="arrow">Monitor</div>
         <h3>Dashboard</h3>
         <p>Each institution sees its own gaps, with interventions ranked by effort and impact.</p>
-        <p class="ref">ori-dashboard.surf.nl</p>
       </div>
       <div class="chev">
         <img class="icon" src="../assets/icons/collaboration-09.svg" alt="">
         <div class="arrow">Improve</div>
         <h3>Signatories set goals</h3>
         <p>Onboarding helps each institution choose its improvements and track the effect.</p>
-        <p class="ref">18 organisations taking part</p>
       </div>
     </div>
   </section>
 
   <!-- ===== 4. FOUR QUESTIONS ===== -->
   <section class="dims">
-    <h2 class="bar-title">Four questions behind every reliable report<small>Example views from the dashboard (illustrative data, from the metrics report)</small></h2>
+    <h2 class="bar-title">Four questions behind every reliable report<small>Live views for one participating institution, ori-dashboard.surf.nl, November 2026. Accuracy: illustrative view from the metrics report, as the live feed does not publish it yet.</small></h2>
     <div class="dim-grid">
       <div class="dim">
         <div class="dim-head"><span class="chip"><img src="../assets/icons/data-10.svg" alt=""></span><div><span class="kicker">Coverage</span><h3>Is all our output in the open indexes?</h3></div></div>
-        <p>Records only in your CRIS, in both, or only in an open source. <b class="why">So open access monitoring counts everything.</b></p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/coverage-focus.jpg" alt="Coverage tab: CRIS compared with OpenAlex, Crossref and OpenAIRE"></figure>
+        <p><b class="why">So open access monitoring counts everything.</b></p>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/live-coverage.jpg" alt="Coverage tab: CRIS compared with OpenAlex, Crossref and OpenAIRE"></figure>
       </div>
       <div class="dim">
         <div class="dim-head"><span class="chip"><img src="../assets/icons/research-17.svg" alt=""></span><div><span class="kicker">Completeness</span><h3>Can we link output to people and places?</h3></div></div>
-        <p>The share of records with a valid DOI, ORCID, ROR and more. <b class="why">So analyses per researcher, group or partner hold up.</b></p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/completeness-focus.jpg" alt="Completeness tab: share of records per metadata field"></figure>
+        <p><b class="why">So analyses per researcher, group or partner hold up.</b></p>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/live-completeness.jpg" alt="Completeness tab: share of records per metadata field"></figure>
       </div>
       <div class="dim">
         <div class="dim-head"><span class="chip"><img src="../assets/icons/data-02.svg" alt=""></span><div><span class="kicker">Enrichment</span><h3>What can other sources fill in?</h3></div></div>
-        <p>Missing values that OpenAIRE or OpenAlex already have. <b class="why">So the CRIS improves with less manual work.</b></p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/enrichment-focus.jpg" alt="Enrichment tab: missing RORs that can be recovered from OpenAIRE and OpenAlex"></figure>
+        <p><b class="why">So the CRIS improves with less manual work.</b></p>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/live-enrichment.jpg" alt="Enrichment tab: missing RORs that can be recovered from OpenAIRE and OpenAlex"></figure>
       </div>
       <div class="dim">
         <div class="dim-head"><span class="chip"><img src="../assets/icons/data-03.svg" alt=""></span><div><span class="kicker">Accuracy</span><h3>Can we trust the affiliations?</h3></div></div>
-        <p>Where sources disagree, and which one is wrong. <b class="why">So reports and benchmarks credit the right institution.</b></p>
+        <p><b class="why">So reports and benchmarks credit the right institution.</b></p>
         <figure class="shot-frame"><img src="../assets/img/dashboard/accuracy-focus.jpg" alt="Accuracy tab: conflicts and agreement between CRIS and OpenAlex"></figure>
       </div>
     </div>
@@ -300,31 +311,27 @@
       <h3>Fully open, behind the scenes</h3>
       <ul>
         <li>A public data lake with OpenAlex, OpenAIRE, CRIS and OpenAPC: every number is reproducible.</li>
-        <li>Skills and an MCP server let non-technical users build auditable reports.</li>
       </ul>
     </div>
     <div class="tile t-yellow">
       <img class="icon" src="../assets/icons/research-14.svg" alt="">
       <h3>What worked</h3>
       <ul>
-        <li>Starting from use cases made the value of better data concrete.</li>
-        <li>Co-design with signatories gave metrics they recognise.</li>
+        <li>Starting from the signatories' use cases made the value of better data concrete.</li>
       </ul>
     </div>
     <div class="tile t-orange">
       <img class="icon" src="../assets/icons/research-19.svg" alt="">
       <h3>What was hard</h3>
       <ul>
-        <li>Accuracy has no single ground truth.</li>
-        <li>Sources copy each other, and their errors.</li>
+        <li>Accuracy has no single ground truth, and sources copy each other's errors.</li>
       </ul>
     </div>
     <div class="tile t-green">
       <img class="icon" src="../assets/icons/data-15.svg" alt="">
       <h3>What's next</h3>
       <ul>
-        <li>BROCCOLI maintains the dashboard and data lake.</li>
-        <li>Long-term governance in DURF.</li>
+        <li>BROCCOLI maintains the dashboard and data lake; DURF the governance.</li>
       </ul>
     </div>
   </section>
