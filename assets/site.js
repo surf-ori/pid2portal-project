@@ -213,7 +213,7 @@
         } else if (cm.icon && !cm.number && anyImg) {
           // Keep rows even: a card without a picture in a grid with pictures shows its pictogram large.
           var ph = el("div", "card-media card-media-icon");
-          ph.innerHTML = '<img class="pictogram pictogram-lg" src="assets/icons/' + encodeURIComponent(cm.icon) + '.png" alt="">';
+          ph.innerHTML = '<img class="pictogram pictogram-lg" src="assets/icons/' + encodeURIComponent(cm.icon) + '.svg" alt="">';
           card.appendChild(ph);
           cm.bigIcon = true;
         }
@@ -221,7 +221,7 @@
         var top = el("div", "card-top");
         if (cm.date) top.appendChild(el("span", "card-date", escapeHtml(cm.date)));
         else if (cm.number) top.appendChild(el("span", "card-number", escapeHtml(cm.number)));
-        else if (cm.icon && !cm.bigIcon) top.innerHTML = '<img class="pictogram" src="assets/icons/' + encodeURIComponent(cm.icon) + '.png" alt="">';
+        else if (cm.icon && !cm.bigIcon) top.innerHTML = '<img class="pictogram" src="assets/icons/' + encodeURIComponent(cm.icon) + '.svg" alt="">';
         top.insertAdjacentHTML("beforeend", tagsHtml(cm.tags));
         body.appendChild(top);
         body.appendChild(g.head);
