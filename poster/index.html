@@ -59,7 +59,7 @@
   h1, h2, h3, .num { font-family: var(--font-display); letter-spacing: -0.01em; margin: 0; }
   p { margin: 0 0 4mm; }
   b, strong { font-weight: 700; }
-  .icon { width: 26mm; height: 26mm; object-fit: contain; display: block; }
+  .icon { width: 34mm; height: 34mm; object-fit: contain; display: block; }
 
   /* template title: thin orange bar before the title */
   .bar-title { font-size: 46pt; line-height: 1.05; padding-left: 8mm; border-left: 2.2mm solid var(--orange); margin-bottom: 9mm; }
@@ -68,19 +68,19 @@
   /* ---------- 1. cover: title + composition of rounded blocks ---------- */
   .cover { position: relative; padding: 22mm var(--pad) 14mm; display: grid; grid-template-columns: 1fr 330mm; gap: 12mm; align-items: center; }
   .eyebrow { font: 700 22pt/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--orange); margin-bottom: 7mm; }
-  .cover h1 { font-size: 104pt; font-weight: 900; line-height: .98; }
+  .cover h1 { font-size: 96pt; font-weight: 900; line-height: .98; }
   .cover .sub { font-size: 30pt; line-height: 1.22; margin-top: 8mm; color: #1a1a1a; }
   .authors { font-size: 22pt; margin-top: 9mm; color: #3a3a3a; }
   .authors strong { color: #000; }
-  .cover .logo { width: 60mm; margin-top: 8mm; display: block; }
-  .collage { position: relative; height: 200mm; }
+  .cover .logo { width: 52mm; margin-top: 6mm; display: block; }
+  .collage { position: relative; height: 140mm; }
   .collage > * { position: absolute; border-radius: 9mm; }
-  .collage .b-orange { left: 0; top: 12mm; width: 120mm; height: 85mm; background: var(--orange); }
-  .collage .b-yellow { right: 8mm; top: 0; width: 95mm; height: 55mm; background: var(--yellow); }
-  .collage .b-green  { left: 22mm; bottom: 0; width: 105mm; height: 50mm; background: var(--green); }
-  .collage .b-peach  { right: 0; bottom: 8mm; width: 60mm; height: 95mm; background: var(--peach); }
+  .collage .b-orange { left: 0; top: 4mm; width: 110mm; height: 70mm; background: var(--orange); }
+  .collage .b-yellow { right: 8mm; top: 0; width: 90mm; height: 45mm; background: var(--yellow); }
+  .collage .b-green  { left: 22mm; bottom: 0; width: 100mm; height: 30mm; background: var(--green); }
+  .collage .b-peach  { right: 0; bottom: 0; width: 60mm; height: 70mm; background: var(--peach); }
   .collage .b-blue   { right: 40mm; bottom: 5mm; width: 50mm; height: 40mm; border: 2mm solid var(--blue); background: transparent; }
-  .collage .shot { left: 30mm; top: 30mm; width: 270mm; height: 150mm; overflow: hidden; border: 2.5mm solid #000; background: #fff; }
+  .collage .shot { left: 34mm; top: 18mm; width: 250mm; height: 112mm; overflow: hidden; border: 2.5mm solid #000; background: #fff; }
   .collage .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
 
   /* ---------- 2. ambition (template: purple ambition slide) ---------- */
@@ -89,6 +89,20 @@
   .label::before, .label::after { content: ""; width: 90mm; height: .6mm; background: currentColor; opacity: .8; }
   .ambition .statement { font-family: var(--font-display); font-weight: 800; font-size: 44pt; line-height: 1.15; max-width: 700mm; margin: 0 auto 6mm; }
   .ambition p { font-size: 22pt; line-height: 1.35; max-width: 640mm; margin: 0 auto; opacity: .95; }
+
+  .chain { display: flex; justify-content: center; align-items: center; gap: 6mm; margin-top: 8mm; flex-wrap: wrap; }
+  .chain span { background: #fff; color: var(--purple); font: 800 22pt/1.1 var(--font-display); padding: 5mm 8mm; border-radius: 4mm; }
+  .chain i { font: 900 30pt/1 var(--font-display); font-style: normal; color: var(--yellow); }
+  .signatories { padding: 14mm var(--pad) 0; display: grid; grid-template-columns: 1fr 1.05fr; gap: var(--gap); align-items: start; }
+  .signatories p { font-size: 21pt; line-height: 1.38; }
+  .signatories .bar-title { margin-bottom: 6mm; }
+  .members { list-style: none; margin: 0 0 3mm; padding: 0; display: flex; flex-wrap: wrap; gap: 3mm; }
+  .members li { font: 700 16pt/1 var(--font-body); padding: 3.5mm 5mm; border-radius: 99mm; background: var(--peach); }
+  .members li:nth-child(4n+2) { background: var(--yellow); }
+  .members li:nth-child(4n+3) { background: #d6e9f5; }
+  .members li:nth-child(4n+4) { background: #d4ecdd; }
+  .note { font-size: 14pt; color: #3a3a3a; }
+  .why { display: block; color: #b85b00; font-size: 19pt; }
 
   /* ---------- 3. process chevrons (template: "Process – 4 steps") ---------- */
   .process { padding: 13mm var(--pad) 0; }
@@ -110,12 +124,12 @@
   .chev .ref { font-size: 14pt; color: #3a3a3a; }
 
   /* ---------- 4. four questions on a peach panel ---------- */
-  .dims { margin: 12mm var(--pad) 0; padding: 12mm 14mm 14mm; background: var(--peach); border-radius: 12mm; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
-  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 9mm 12mm; flex: 1 1 0; min-height: 0; }
-  .dim { display: flex; flex-direction: column; min-height: 0; background: #fff; border-radius: 9mm; padding: 7mm 8mm 8mm; }
+  .dims { margin: 10mm var(--pad) 0; padding: 10mm 12mm 12mm; background: var(--peach); border-radius: 12mm; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1.25fr 1fr; gap: 9mm 12mm; flex: 1 1 0; min-height: 0; }
+  .dim { display: flex; flex-direction: column; min-height: 0; background: #fff; border-radius: 9mm; padding: 6mm 7mm 7mm; }
   .dim-head { display: flex; gap: 5mm; align-items: center; }
-  .chip { flex: none; width: 24mm; height: 24mm; border-radius: 5mm; display: grid; place-items: center; }
-  .chip img { width: 16mm; height: 16mm; filter: invert(1); }
+  .chip { flex: none; width: 30mm; height: 30mm; border-radius: 6mm; display: grid; place-items: center; }
+  .chip img { width: 22mm; height: 22mm; filter: invert(1); }
   .dim:nth-child(1) .chip { background: var(--orange); }
   .dim:nth-child(2) .chip { background: var(--yellow); } .dim:nth-child(2) .chip img { filter: none; }
   .dim:nth-child(3) .chip { background: var(--blue); }
@@ -123,8 +137,8 @@
   .dim .kicker { font: 700 16pt/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: #3a3a3a; }
   .dim h3 { font-size: 28pt; line-height: 1.1; margin-top: 1.5mm; }
   .dim p { font-size: 17pt; line-height: 1.35; margin: 4mm 0 4mm; color: #1a1a1a; }
-  .shot-frame { flex: 1 1 0; min-height: 35mm; display: flex; border: 1.2mm solid #000; border-radius: 6mm; overflow: hidden; background: #fff; margin: 0; }
-  .shot-frame img { width: 100%; height: 100%; object-fit: contain; object-position: center top; display: block; }
+  .shot-frame { flex: 1 1 0; min-height: 35mm; display: flex; border: 0; border-radius: 6mm; overflow: hidden; background: #fff; margin: 0; }
+  .shot-frame img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
 
   /* ---------- 5. tiles (template: "status of project") ---------- */
   .tiles { padding: 12mm var(--pad) 0; display: grid; grid-template-columns: 1.25fr 1fr 1fr 1fr; gap: 8mm; }
@@ -132,7 +146,7 @@
   .tile h3 { font-size: 26pt; margin: 3mm 0 4mm; }
   .tile ul { margin: 0; padding-left: 6mm; }
   .tile li { font-size: 17pt; line-height: 1.32; margin-bottom: 2.5mm; }
-  .tile .icon { width: 18mm; height: 18mm; }
+  .tile .icon { width: 24mm; height: 24mm; }
   .t-blue { background: var(--blue); color: #fff; } .t-blue .icon { filter: invert(1); }
   .t-yellow { background: var(--yellow); }
   .t-orange { background: var(--orange); color: #fff; } .t-orange .icon { filter: invert(1); }
@@ -152,8 +166,8 @@
   .tl p { font-size: 15pt; line-height: 1.3; margin: 3mm 3mm 0; }
 
   /* ---------- 7. closing panel (template: "Thank you" on yellow) ---------- */
-  .foot { margin-top: 12mm; background: var(--yellow); padding: 10mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
-  .qr { width: 92mm; text-align: center; }
+  .foot { margin-top: 10mm; background: var(--yellow); padding: 8mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
+  .qr { width: 78mm; text-align: center; }
   .qr img { display: block; width: 100%; background: #fff; border-radius: 6mm; padding: 4mm; }
   .qr span { display: block; font: 800 18pt/1.2 var(--font-display); margin-top: 3mm; }
   .foot h2 { font-size: 42pt; line-height: 1.05; }
@@ -177,9 +191,9 @@
   <header class="cover">
     <div>
       <p class="eyebrow">Barcelona Declaration Conference · Berlin · 24–25 November 2026</p>
-      <h1>Where do PIDs actually break?</h1>
-      <p class="sub">ORI Quality Monitoring: lessons from monitoring and improving the quality of Dutch open research information</p>
-      <p class="authors"><strong>Maurice Vanderfeesten</strong> · SURF · maurice.vanderfeesten@surf.nl</p>
+      <h1>Better metadata, better decisions</h1>
+      <p class="sub">How the Dutch Barcelona Declaration signatories monitor and improve their open research information, so their analyses and strategic reports rest on reliable data</p>
+      <p class="authors"><strong>Maurice Vanderfeesten</strong> · SURF · maurice.vanderfeesten@surf.nl<br>with the Netherlands Barcelona Declaration Network</p>
       <img class="logo" src="../assets/img/surf-logo.svg" alt="SURF">
     </div>
     <div class="collage" aria-hidden="true">
@@ -192,11 +206,44 @@
     </div>
   </header>
 
-  <!-- ===== 2. AMBITION ===== -->
+  <!-- ===== 2. WHY IT MATTERS ===== -->
   <section class="ambition">
-    <p class="label">Ambition</p>
-    <p class="statement">Turn Barcelona Declaration commitments into concrete, institution-level goals for better open research information</p>
-    <p>The ORI dashboard was co-designed with the Dutch Barcelona Declaration signatories, so what gets measured reflects where better metadata brings real value, and what it takes to close the gaps.</p>
+    <p class="label">Why it matters</p>
+    <p class="statement">We don't fill in ORCIDs for the sake of ORCIDs. Better metadata gives institutions analyses and strategic reports they can trust.</p>
+    <div class="chain">
+      <span>Better metadata</span><i aria-hidden="true">→</i><span>Reliable open research information</span><i aria-hidden="true">→</i><span>Trustworthy analyses and reporting</span>
+    </div>
+  </section>
+
+  <!-- ===== 2b. THE SIGNATORIES ===== -->
+  <section class="signatories">
+    <div>
+      <h2 class="bar-title">Built with and for the Dutch Barcelona Declaration signatories</h2>
+      <p>Their research intelligence, library and CRIS teams depend on high-quality data in their daily work. They shaped every step: they brought the use cases, prioritised the metadata, tested the dashboard and now set their own goals with it.</p>
+    </div>
+    <div>
+      <ul class="members">
+        <li>University of Amsterdam</li>
+        <li>Maastricht University</li>
+        <li>University of Groningen</li>
+        <li>Hanze University of Applied Sciences Groningen</li>
+        <li>Amsterdam University of Applied Sciences</li>
+        <li>Vrije Universiteit Amsterdam</li>
+        <li>University of Twente</li>
+        <li>Protestant Theological University</li>
+        <li>Amsterdam UMC, location VUmc</li>
+        <li>Eindhoven University of Technology</li>
+        <li>Utrecht University</li>
+        <li>Open University</li>
+        <li>Amsterdam UMC, location AMC</li>
+        <li>Erasmus University Rotterdam</li>
+        <li>NHTV Breda University of Applied Sciences</li>
+        <li>Royal Netherlands Academy of Arts and Sciences</li>
+        <li>University of Humanistic Studies</li>
+        <li>Tilburg University</li>
+      </ul>
+      <p class="note">The 18 organisations taking part in the ORI dashboard (ori-dashboard.surf.nl, November 2026)</p>
+    </div>
   </section>
 
   <!-- ===== 3. PROCESS ===== -->
@@ -204,59 +251,55 @@
     <h2 class="bar-title">From consultation to metrics to dashboard</h2>
     <div class="chevrons">
       <div class="chev">
-        <img class="icon" src="../assets/icons/collaboration-03.png" alt="">
+        <img class="icon" src="../assets/icons/collaboration-03.svg" alt="">
         <div class="arrow">Consult</div>
-        <h3>14 use cases</h3>
-        <p>From 10 organisations. Fix three elements first: <b>DOIs</b>, <b>ROR</b> and <b>ORCID</b>.</p>
-        <p class="ref">doi.org/10.5281/zenodo.18667698</p>
+        <h3>Use cases first</h3>
+        <p>Signatories brought 14 use cases, such as open access monitoring and linking sources. They point to <b>DOIs</b>, <b>ROR</b> and <b>ORCID</b>.</p>
       </div>
       <div class="chev">
-        <img class="icon" src="../assets/icons/research-03.png" alt="">
+        <img class="icon" src="../assets/icons/research-03.svg" alt="">
         <div class="arrow">Measure</div>
-        <h3>Metrics</h3>
-        <p>What to measure and how: CRIS compared with OpenAlex, OpenAIRE and Crossref.</p>
-        <p class="ref">doi.org/10.5281/zenodo.23682960</p>
+        <h3>Metrics that matter</h3>
+        <p>Measure only what the use cases need: CRIS compared with OpenAlex, OpenAIRE and Crossref.</p>
       </div>
       <div class="chev">
-        <img class="icon" src="../assets/icons/research-20.png" alt="">
+        <img class="icon" src="../assets/icons/research-20.svg" alt="">
         <div class="arrow">Monitor</div>
         <h3>Dashboard</h3>
-        <p>Your gaps on four dimensions, each linked to interventions with effort and impact.</p>
-        <p class="ref">ori-dashboard.surf.nl</p>
+        <p>Each institution sees its own gaps, with interventions ranked by effort and impact.</p>
       </div>
       <div class="chev">
-        <img class="icon" src="../assets/icons/collaboration-09.png" alt="">
+        <img class="icon" src="../assets/icons/collaboration-09.svg" alt="">
         <div class="arrow">Improve</div>
-        <h3>Set goals</h3>
-        <p>Onboarding helps signatories set goals and track their interventions.</p>
-        <p class="ref">18 organisations taking part</p>
+        <h3>Signatories set goals</h3>
+        <p>Onboarding helps each institution choose its improvements and track the effect.</p>
       </div>
     </div>
   </section>
 
   <!-- ===== 4. FOUR QUESTIONS ===== -->
   <section class="dims">
-    <h2 class="bar-title">Four questions every institution can now answer<small>Example views from the dashboard (illustrative data, from the metrics report)</small></h2>
+    <h2 class="bar-title">Four questions behind every reliable report<small>Live views for one participating institution, ori-dashboard.surf.nl, November 2026. Accuracy: view from the dashboard mockup with illustrative data, as the live feed does not publish it yet.</small></h2>
     <div class="dim-grid">
       <div class="dim">
-        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-10.png" alt=""></span><div><span class="kicker">Coverage</span><h3>Is our output in the open indexes?</h3></div></div>
-        <p>Records only in your CRIS, in both, or only in OpenAlex, Crossref or OpenAIRE.</p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/coverage.jpg" alt="Coverage tab: CRIS compared with OpenAlex, Crossref and OpenAIRE"></figure>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-10.svg" alt=""></span><div><span class="kicker">Coverage</span><h3>Is all our output in the open indexes?</h3></div></div>
+        <p><b class="why">So open access monitoring counts everything.</b></p>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/live-coverage.jpg" alt="Coverage tab: CRIS compared with OpenAlex, Crossref and OpenAIRE"></figure>
       </div>
       <div class="dim">
-        <div class="dim-head"><span class="chip"><img src="../assets/icons/research-17.png" alt=""></span><div><span class="kicker">Completeness</span><h3>How many records lack an ORCID?</h3></div></div>
-        <p>The share of records with a valid DOI, ORCID, ROR, grant DOI, ISSN, OA status and corresponding author.</p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/completeness.jpg" alt="Completeness tab: share of records per metadata field"></figure>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/research-17.svg" alt=""></span><div><span class="kicker">Completeness</span><h3>Can we link output to people and places?</h3></div></div>
+        <p><b class="why">So analyses per researcher, group or partner hold up.</b></p>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/live-completeness.jpg" alt="Completeness tab: share of records per metadata field"></figure>
       </div>
       <div class="dim">
-        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-02.png" alt=""></span><div><span class="kicker">Enrichment</span><h3>What can other sources fill in?</h3></div></div>
-        <p>Missing values in your source that OpenAIRE or OpenAlex already have, ready to recover.</p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/enrichment.jpg" alt="Enrichment tab: missing RORs that can be recovered from OpenAIRE and OpenAlex"></figure>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-02.svg" alt=""></span><div><span class="kicker">Enrichment</span><h3>What can other sources fill in?</h3></div></div>
+        <p><b class="why">So the CRIS improves with less manual work.</b></p>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/live-enrichment.jpg" alt="Enrichment tab: missing RORs that can be recovered from OpenAIRE and OpenAlex"></figure>
       </div>
       <div class="dim">
-        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-03.png" alt=""></span><div><span class="kicker">Accuracy</span><h3>Is that ROR affiliation right?</h3></div></div>
-        <p>Where sources disagree, and which one is wrong: checked against raw affiliation strings.</p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/accuracy-agreement.jpg" alt="Accuracy tab: conflicts and agreement between CRIS and OpenAlex"></figure>
+        <div class="dim-head"><span class="chip"><img src="../assets/icons/data-03.svg" alt=""></span><div><span class="kicker">Accuracy</span><h3>Can we trust the affiliations?</h3></div></div>
+        <p><b class="why">So reports and benchmarks credit the right institution.</b></p>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/accuracy-mockup.jpg" alt="Accuracy: conflicts between CRIS and OpenAlex, such as different ROR affiliation ids"></figure>
       </div>
     </div>
   </section>
@@ -264,48 +307,32 @@
   <!-- ===== 5. TILES: open stack + reflections ===== -->
   <section class="tiles">
     <div class="tile t-blue">
-      <img class="icon" src="../assets/icons/data-14.png" alt="">
+      <img class="icon" src="../assets/icons/data-14.svg" alt="">
       <h3>Fully open, behind the scenes</h3>
       <ul>
         <li>A public data lake with OpenAlex, OpenAIRE, CRIS and OpenAPC: every number is reproducible.</li>
-        <li>Skills and an MCP server let non-technical users build auditable reports.</li>
       </ul>
     </div>
     <div class="tile t-yellow">
-      <img class="icon" src="../assets/icons/research-14.png" alt="">
+      <img class="icon" src="../assets/icons/research-14.svg" alt="">
       <h3>What worked</h3>
       <ul>
-        <li>Co-design gave metrics that institutions recognise.</li>
-        <li>Linking gaps to effort shows where to act.</li>
+        <li>Starting from the signatories' use cases made the value of better data concrete.</li>
       </ul>
     </div>
     <div class="tile t-orange">
-      <img class="icon" src="../assets/icons/research-19.png" alt="">
+      <img class="icon" src="../assets/icons/research-19.svg" alt="">
       <h3>What was hard</h3>
       <ul>
-        <li>Accuracy has no single ground truth.</li>
-        <li>Sources copy each other, and their errors.</li>
+        <li>Accuracy has no single ground truth, and sources copy each other's errors.</li>
       </ul>
     </div>
     <div class="tile t-green">
-      <img class="icon" src="../assets/icons/data-15.png" alt="">
+      <img class="icon" src="../assets/icons/data-15.svg" alt="">
       <h3>What's next</h3>
       <ul>
-        <li>BROCCOLI maintains the dashboard and data lake.</li>
-        <li>Long-term governance in DURF.</li>
+        <li>BROCCOLI maintains the dashboard and data lake; DURF the governance.</li>
       </ul>
-    </div>
-  </section>
-
-  <!-- ===== 6. TIMELINE ===== -->
-  <section class="timeline">
-    <div class="tl">
-      <div><span class="pill">Sep 2025</span><p>Project start, funded by UNL</p></div>
-      <div><span class="pill">Feb 2026</span><p>Framework report</p></div>
-      <div><span class="pill">Apr 2026</span><p>Data lake filled, AI tools</p></div>
-      <div><span class="pill">Sep 2026</span><p>Dashboard in production</p></div>
-      <div><span class="pill">Oct 2026</span><p>Metrics report, onboarding</p></div>
-      <div><span class="pill">Nov 2026</span><p>Berlin: your feedback</p></div>
     </div>
   </section>
 
