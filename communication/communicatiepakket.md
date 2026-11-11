@@ -111,7 +111,7 @@ SURF · maurice.vanderfeesten@surf.nl
 
 **Teaser:** An ORI data quality dashboard, an open data lake, two reports and a foundation for better governance and funding of the Netherlands Research Portal. Built in twelve months together with the Dutch signatories of the Barcelona Declaration, and now brought together on one project website.
 
-**Header image:** a screenshot of the project website (hero), or the illustration from the kick-off post.
+**Header image:** https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg
 
 In October 2025 we kicked off PID to Portal, funded by Universities of the Netherlands (UNL) and part of the SURF Open Research Information programme 2025–2030. The goal: strengthen the open research information chain, from persistent identifiers to the public research portal. The project is complete, and we are proud to share everything it delivered on one website:
 
@@ -165,7 +165,7 @@ Thank you to everyone who contributed use cases, feedback and time. This was bui
 
 **Teaser:** Een ORI-dashboard voor datakwaliteit, een open datalake, twee rapporten en een grondslag voor beter beheer en betere financiering van het Netherlands Research Portal. In twaalf maanden gebouwd samen met de Nederlandse ondertekenaars van de Barcelona Declaration, en nu bij elkaar op één projectwebsite.
 
-**Headerafbeelding:** een screenshot van de projectwebsite (hero), of de illustratie uit de kick-off-post.
+**Headerafbeelding:** https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg
 
 In oktober 2025 gingen we van start met PID to Portal, gefinancierd door Universiteiten van Nederland (UNL) en onderdeel van het SURF Open Research Information-programma 2025–2030. Het doel: de keten van open onderzoeksinformatie versterken, van persistent identifier tot het publieke onderzoeksportaal. Het project is afgerond, en we laten met trots zien wat het heeft opgeleverd, op één website:
 
@@ -214,6 +214,8 @@ Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben d
 ---
 
 ## 6. Social media
+
+*Afbeelding bij LinkedIn, Bluesky en Mastodon: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg*
 
 **LinkedIn (NL)**
 > Met trots: alle resultaten van PID2Portal staan online, op één plek. 🔗 https://surf-ori.github.io/pid2portal-project/
@@ -279,10 +281,13 @@ Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben d
 | Onboarding aanvragen, algemene vragen en feedback | ori@surf.nl |
 | Persoonlijk contact (mails, poster) | maurice.vanderfeesten@surf.nl |
 
+**Headers (Better metadata, better decisions)**
+- Blog / nieuwsbrief, 1600 × 900: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg
+- LinkedIn / Bluesky / link-preview, 1200 × 630: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg
+
 **Beeld (alles online, vrij te gebruiken binnen de communicatie)**
 - Dashboard: https://surf-ori.github.io/pid2portal-project/assets/img/ori-dashboard.jpg
 - Netherlands Research Portal: https://surf-ori.github.io/pid2portal-project/assets/img/nl-research-portal.jpg
 - Dashboard, completeness: https://surf-ori.github.io/pid2portal-project/assets/img/ori-dashboard-completeness.jpg
 - Data lake-architectuur: https://surf-ori.github.io/pid2portal-project/assets/img/blog/ori-datahub-phases.jpg
 - Kick-off-illustratie: https://surf-ori.github.io/pid2portal-project/assets/img/blog/pid-to-portal-kickoff.jpg
-- Voor een header: maak een screenshot van de hero van de projectwebsite.
