@@ -215,7 +215,7 @@ Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben d
 
 ## 6. Social media
 
-*Afbeelding bij LinkedIn, Bluesky en Mastodon: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg*
+*Afbeelding bij LinkedIn, Bluesky en Mastodon: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg (liggend) of https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1350.jpg (staand, beter zichtbaar op mobiel). Voor stories: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1920.jpg*
 
 **LinkedIn (NL)**
 > Met trots: alle resultaten van PID2Portal staan online, op één plek. 🔗 https://surf-ori.github.io/pid2portal-project/
@@ -284,6 +284,8 @@ Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben d
 **Headers (Better metadata, better decisions)**
 - Blog / nieuwsbrief, 1600 × 900: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg
 - LinkedIn / Bluesky / link-preview, 1200 × 630: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg
+- Mobiel staand, feed (LinkedIn, Instagram), 1080 × 1350: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1350.jpg
+- Mobiel staand, stories, 1080 × 1920: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1920.jpg
 
 **Beeld (alles online, vrij te gebruiken binnen de communicatie)**
 - Dashboard: https://surf-ori.github.io/pid2portal-project/assets/img/ori-dashboard.jpg
