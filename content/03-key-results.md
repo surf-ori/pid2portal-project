@@ -19,6 +19,8 @@ tags: In production
 
 The ORI data quality dashboard compares your institution's records in your own CRIS with open sources such as OpenAlex and OpenAIRE. It shows what is missing, what can be enriched from elsewhere and where sources disagree, so you can set goals and track the effect of your improvements.
 
+For every gap it suggests interventions, scored on effort and impact, from quick wins such as mandating ORCID at staff onboarding to bigger changes in the CRIS workflow. And it gets the signatories talking: which approach works for you? Together we build a shared list of interventions.
+
 - [Open the ORI dashboard](https://ori-dashboard.surf.nl/)
 - [Read the metrics report](https://doi.org/10.5281/zenodo.23682960)
 
