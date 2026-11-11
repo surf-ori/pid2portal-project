@@ -16,6 +16,7 @@ Inhoud:
 6. Social media: LinkedIn (NL / EN), Bluesky / Mastodon (EN)
 7. Nieuwsbriefbericht (NL / EN)
 8. Links en beeldmateriaal
+9. Acknowledgements (NL / EN)
 
 ---
 
@@ -61,14 +62,14 @@ Welke aanpak werkt bij jou? Deel je interventies, met wat ze kostten en wat ze o
 
 Wil je het ORI-dashboard bij jouw instelling gebruiken? Mail ons, dan verzorgen we een onboarding voor jouw team.
 
-Dit was er niet geweest zonder jullie use cases, feedback en inzet. Dank daarvoor. Het werk gaat verder in DURF (http://durf-project.github.io/) en BROCCOLI. Stuur de link gerust door aan collega's.
+Dit was er niet geweest zonder jullie use cases, feedback en inzet. Speciale dank aan Rutger de Jong (Leiden University), Ana Ranitovic (Rijksuniversiteit Groningen), Till Bey (SURF), Bianca Kramer (Sesame Open Science) en alle Nederlandse Barcelona Declaration-ondertekenaars, en aan Joeri Both, Eileen Waegemaekers, John Doove en Darco Jansen, die dit op de achtergrond mogelijk maakten. Alle namen en rollen staan op https://surf-ori.github.io/pid2portal-project/#acknowledgements Het werk gaat verder in DURF (http://durf-project.github.io/) en BROCCOLI. Stuur de link gerust door aan collega's.
 
 Hartelijke groet,
 
 Maurice Vanderfeesten
 SURF · maurice.vanderfeesten@surf.nl
 
-*PS: in Berlijn staan we op de Barcelona Declaration-conferentie met een poster over het dashboard: https://surf-ori.github.io/pid2portal-project/poster/*
+*PS: in Berlijn staan we op de Barcelona Declaration-conferentie met een poster over het dashboard: https://doi.org/10.5281/zenodo.24132077*
 
 ---
 
@@ -94,14 +95,14 @@ Which approach works for you? Share your interventions, with what they cost and 
 
 Would you like to use the ORI dashboard at your institution? Reply to this e-mail and we will arrange an onboarding for your team.
 
-This would not exist without your use cases, feedback and commitment. Thank you. The work continues in DURF (http://durf-project.github.io/) and BROCCOLI. Feel free to forward the link to colleagues.
+This would not exist without your use cases, feedback and commitment. Special thanks to Rutger de Jong (Leiden University), Ana Ranitovic (University of Groningen), Till Bey (SURF), Bianca Kramer (Sesame Open Science) and all Dutch Barcelona Declaration signatories, and to Joeri Both, Eileen Waegemaekers, John Doove and Darco Jansen, who made this possible behind the scenes. All names and roles are at https://surf-ori.github.io/pid2portal-project/#acknowledgements The work continues in DURF (http://durf-project.github.io/) and BROCCOLI. Feel free to forward the link to colleagues.
 
 Kind regards,
 
 Maurice Vanderfeesten
 SURF · maurice.vanderfeesten@surf.nl
 
-*PS: at the Barcelona Declaration conference in Berlin we present a poster on the dashboard: https://surf-ori.github.io/pid2portal-project/poster/*
+*PS: at the Barcelona Declaration conference in Berlin we present a poster on the dashboard: https://doi.org/10.5281/zenodo.24132077*
 
 ---
 
@@ -151,7 +152,13 @@ These examples are a starting point. The real value comes from the signatories t
 
 The work continues in two Open Science NL projects. BROCCOLI takes over the ORI dashboard and data lake for curation and maintenance; [DURF](http://durf-project.github.io/) builds on the groundwork for governance and funding of the Netherlands Research Portal. Want to use the ORI dashboard at your institution to set goals and plan interventions? [Send us an e-mail](mailto:ori@surf.nl?subject=ORI%20dashboard%20onboarding) and we will arrange an onboarding for your team.
 
-Thank you to everyone who contributed use cases, feedback and time. This was built together, and it only gets better if we keep improving it together.
+### Thank you
+
+PID2Portal was a team effort. Thank you to Rutger de Jong (Leiden University) for his metadata expertise; Ana Ranitovic (University of Groningen) for her leading role as chair of the Dutch Barcelona Declaration signatories; Till Bey (SURF) for his knowledge of the ORI data lake and for setting it up; Bianca Kramer (Sesame Open Science) for her energy, for facilitating the workshops and community feedback, and for the excellent reports and presentations; and all Dutch Barcelona Declaration signatories for their use cases and their feedback on the ORI dashboard.
+
+Behind the scenes, Joeri Both (Vrije Universiteit Amsterdam) encouraged us and connected us with OpenAIRE; Eileen Waegemaekers and John Doove (SURF) created this opportunity within SURF; and Darco Jansen (Universities of the Netherlands) secured the funding and built support among the boards of the Dutch universities. See all [acknowledgements, with ORCID iDs](https://surf-ori.github.io/pid2portal-project/#acknowledgements).
+
+This was built together, and it only gets better if we keep improving it together.
 
 *Maurice Vanderfeesten, on behalf of the SURF ORI programme team*
 
@@ -205,7 +212,13 @@ Die voorbeelden zijn een begin. De echte waarde komt van de ondertekenaars zelf:
 
 Het werk gaat verder in twee Open Science NL-projecten. BROCCOLI neemt het ORI-dashboard en het datalake over voor curatie en beheer; [DURF](http://durf-project.github.io/) bouwt voort op de grondslag voor beheer en financiering van het Netherlands Research Portal. Wil je het ORI-dashboard bij jouw instelling gebruiken om doelen te stellen en interventies te plannen? [Stuur ons een mail](mailto:ori@surf.nl?subject=ORI%20dashboard%20onboarding), dan verzorgen we een onboarding voor jouw team.
 
-Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben dit samen gebouwd, en het wordt alleen beter als we het samen blijven verbeteren.
+### Dank je wel
+
+PID2Portal was teamwerk. Dank aan Rutger de Jong (Leiden University) voor zijn metadata-expertise; Ana Ranitovic (Rijksuniversiteit Groningen) voor haar trekkersrol als voorzitter van de Nederlandse Barcelona Declaration-ondertekenaars; Till Bey (SURF) voor zijn kennis over en het opzetten van het ORI-datalake; Bianca Kramer (Sesame Open Science) voor haar energie, haar faciliterende rol in workshops en community-feedback, en de uitstekende rapportages en presentaties; en alle Nederlandse Barcelona Declaration-ondertekenaars voor hun use cases en hun feedback op het ORI-dashboard.
+
+Op de achtergrond maakten Joeri Both (Vrije Universiteit Amsterdam) met zijn aanmoediging en de verbinding met OpenAIRE, Eileen Waegemaekers en John Doove (SURF) door deze mogelijkheid binnen SURF te scheppen, en Darco Jansen (Universiteiten van Nederland) met de financiering en het draagvlak bij de bestuurders van de Nederlandse universiteiten dit mogelijk. Zie alle [acknowledgements, met ORCID iD's](https://surf-ori.github.io/pid2portal-project/#acknowledgements).
+
+We hebben dit samen gebouwd, en het wordt alleen beter als we het samen blijven verbeteren.
 
 *Maurice Vanderfeesten, namens het SURF ORI-programmateam*
 
@@ -226,9 +239,15 @@ Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben d
 >
 > Welke aanpak werkt bij jou om metadata te verbeteren? Deel je interventie via de Feedback-knop op de site.
 >
+> Dank aan Rutger de Jong, Ana Ranitovic, Till Bey, Bianca Kramer en alle Nederlandse Barcelona Declaration-ondertekenaars, en aan Joeri Both, Eileen Waegemaekers, John Doove en Darco Jansen.
+>
+> Thanks to Rutger de Jong, Ana Ranitovic, Till Bey, Bianca Kramer and all Dutch Barcelona Declaration signatories, and to Joeri Both, Eileen Waegemaekers, John Doove and Darco Jansen.
+>
 > Better metadata, better decisions.
 >
 > #OpenResearchInformation #BarcelonaDeclaration #OpenScience #SURF
+>
+> *Tip: tag de genoemde mensen en hun instellingen op LinkedIn.*
 
 **LinkedIn (EN)**
 > Proud to share: all PID2Portal results are online, in one place. 🔗 https://surf-ori.github.io/pid2portal-project/
@@ -278,8 +297,10 @@ Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben d
 | PID Fest-presentatie (slides) | https://doi.org/10.5281/zenodo.23686369 |
 | PID Fest-video | https://video.edu.nl/w/gFEVJXpJ2k6L31LAzWUqmF |
 | Poster Berlijn (voor de PS) | https://surf-ori.github.io/pid2portal-project/poster/ |
+| Poster op Zenodo (DOI) | https://doi.org/10.5281/zenodo.24132077 |
 | Onboarding aanvragen, algemene vragen en feedback | ori@surf.nl |
 | Persoonlijk contact (mails, poster) | maurice.vanderfeesten@surf.nl |
+| Acknowledgements (namen, rollen, ORCID iD's) | https://surf-ori.github.io/pid2portal-project/#acknowledgements |
 
 **Headers (Better metadata, better decisions)**
 - Blog / nieuwsbrief, 1600 × 900: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg
@@ -293,3 +314,28 @@ Dank aan iedereen die use cases, feedback en tijd heeft bijgedragen. We hebben d
 - Dashboard, completeness: https://surf-ori.github.io/pid2portal-project/assets/img/ori-dashboard-completeness.jpg
 - Data lake-architectuur: https://surf-ori.github.io/pid2portal-project/assets/img/blog/ori-datahub-phases.jpg
 - Kick-off-illustratie: https://surf-ori.github.io/pid2portal-project/assets/img/blog/pid-to-portal-kickoff.jpg
+
+---
+
+## 9. Acknowledgements
+
+Volledige lijst met ORCID iD's en ROR-links: https://surf-ori.github.io/pid2portal-project/#acknowledgements
+
+| Naam | Instelling | Rol (NL) | Role (EN) | ORCID |
+|---|---|---|---|---|
+| Maurice Vanderfeesten | SURF | projectleider | project lead | https://orcid.org/0000-0001-6397-4759 |
+| Rutger de Jong | Leiden University | metadata-expertise | metadata expertise | https://orcid.org/0000-0001-6654-8480 |
+| Ana Ranitovic | Rijksuniversiteit Groningen | trekker als voorzitter van de Nederlandse Barcelona Declaration-ondertekenaars | leading role as chair of the Dutch Barcelona Declaration signatories | https://orcid.org/0009-0008-5163-3461 |
+| Till Bey | SURF | kennis over en opzet van het ORI-datalake | knowledge of the ORI data lake, and setting it up | https://orcid.org/0000-0001-7509-9875 |
+| Bianca Kramer | Sesame Open Science | energie, workshops en community-feedback, rapportages en presentaties | energy, workshops and community feedback, reports and presentations | https://orcid.org/0000-0002-5965-6560 |
+| Dutch Barcelona Declaration signatories | | use cases en feedback op het ORI-dashboard | use cases and feedback on the ORI dashboard | |
+| Joeri Both | Vrije Universiteit Amsterdam | aanmoediging en verbinding met OpenAIRE | encouragement and the connection with OpenAIRE | https://orcid.org/0009-0001-3218-4233 |
+| Eileen Waegemaekers | SURF | deze mogelijkheid binnen SURF geschapen | created this opportunity within SURF | https://orcid.org/0009-0005-5749-4886 |
+| John Doove | SURF | deze mogelijkheid binnen SURF geschapen | created this opportunity within SURF | https://orcid.org/0000-0001-8217-2217 |
+| Darco Jansen | Universiteiten van Nederland | financiering en draagvlak bij de bestuurders | funding and support among the university boards | https://orcid.org/0009-0001-0364-0252 |
+
+**Poster citeren (CC BY 4.0):**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24132077.svg)](https://doi.org/10.5281/zenodo.24132077)
+
+Vanderfeesten, M. (2026). *Better metadata, better decisions: how the Dutch Barcelona Declaration signatories monitor and improve their open research information* [Poster]. Barcelona Declaration Conference 2026, Berlin, 24–25 November. https://doi.org/10.5281/zenodo.24132077

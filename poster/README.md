@@ -10,6 +10,14 @@ Poster for the [Barcelona Declaration conference](https://barcelona-declaration.
 
 The dashboard images in `../assets/img/dashboard/`: `live-*.jpg` are captured from the live dashboard (ori-dashboard.surf.nl, November 2026, one participating institution, at 3× resolution); Accuracy comes from the mockup, because the live feed does not publish it yet. The organisation list on the poster is the list of participating organisations on the dashboard. `accuracy-mockup.jpg` and `interventions-mockup.jpg` are captured from the dashboard mockup (ori-dashboard.lovable.app) at 3× resolution; the effort × impact examples on the poster come from the metrics report, Tables 10–13 (AI-generated examples, a starting point for discussion).
 
+## Citation and licence
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24132077.svg)](https://doi.org/10.5281/zenodo.24132077)
+
+The poster is published on Zenodo (https://doi.org/10.5281/zenodo.24132077) and licensed under CC BY 4.0 (badge: `../assets/img/cc-by.svg`). Cite it as:
+
+Vanderfeesten, M. (2026). *Better metadata, better decisions: how the Dutch Barcelona Declaration signatories monitor and improve their open research information* [Poster]. Barcelona Declaration Conference 2026, Berlin, 24–25 November. https://doi.org/10.5281/zenodo.24132077
+
 ## Editing
 
 - Change the text in `index.html` (every block is marked with a comment), or open the poster in a browser and click **Edit text** to type on it directly. Edits in the browser are not saved: export them with **Save as PDF**, or copy them into the file.
