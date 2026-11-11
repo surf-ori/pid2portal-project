@@ -69,7 +69,7 @@ Hartelijke groet,
 Maurice Vanderfeesten
 SURF · maurice.vanderfeesten@surf.nl
 
-*PS: in Berlijn staan we op de Barcelona Declaration-conferentie met een poster over het dashboard: https://doi.org/10.5281/zenodo.24132077*
+*PS: in Berlijn staan we op de Barcelona Declaration-conferentie met een poster over het dashboard: https://doi.org/10.5281/zenodo.24132076*
 
 ---
 
@@ -102,7 +102,7 @@ Kind regards,
 Maurice Vanderfeesten
 SURF · maurice.vanderfeesten@surf.nl
 
-*PS: at the Barcelona Declaration conference in Berlin we present a poster on the dashboard: https://doi.org/10.5281/zenodo.24132077*
+*PS: at the Barcelona Declaration conference in Berlin we present a poster on the dashboard: https://doi.org/10.5281/zenodo.24132076*
 
 ---
 
@@ -297,7 +297,7 @@ We hebben dit samen gebouwd, en het wordt alleen beter als we het samen blijven 
 | PID Fest-presentatie (slides) | https://doi.org/10.5281/zenodo.23686369 |
 | PID Fest-video | https://video.edu.nl/w/gFEVJXpJ2k6L31LAzWUqmF |
 | Poster Berlijn (voor de PS) | https://surf-ori.github.io/pid2portal-project/poster/ |
-| Poster op Zenodo (DOI) | https://doi.org/10.5281/zenodo.24132077 |
+| Poster op Zenodo (DOI) | https://doi.org/10.5281/zenodo.24132076 |
 | Onboarding aanvragen, algemene vragen en feedback | ori@surf.nl |
 | Persoonlijk contact (mails, poster) | maurice.vanderfeesten@surf.nl |
 | Acknowledgements (namen, rollen, ORCID iD's) | https://surf-ori.github.io/pid2portal-project/#acknowledgements |
@@ -336,6 +336,6 @@ Volledige lijst met ORCID iD's en ROR-links: https://surf-ori.github.io/pid2port
 
 **Poster citeren (CC BY 4.0):**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24132077.svg)](https://doi.org/10.5281/zenodo.24132077)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24132076.svg)](https://doi.org/10.5281/zenodo.24132076)
 
-Vanderfeesten, M. (2026). *Better metadata, better decisions: how the Dutch Barcelona Declaration signatories monitor and improve their open research information* [Poster]. Barcelona Declaration Conference 2026, Berlin, 24–25 November. https://doi.org/10.5281/zenodo.24132077
+Vanderfeesten, M. (2026). *Better metadata, better decisions: how the Dutch Barcelona Declaration signatories monitor and improve their open research information* [Poster]. Barcelona Declaration Conference 2026, Berlin, 24–25 November. https://doi.org/10.5281/zenodo.24132076
