@@ -20,6 +20,8 @@ assets/feedback.js  floating feedback button: share an intervention (issue forms
 assets/img/         screenshots and figures (from the deliverables and the PID Fest slides)
 assets/icons/       SURF pictograms used on the cards
 content/            the editable texts, one Markdown file per section
+communication/      communication package: e-mails, blog posts, social posts (NL/EN)
+poster/             the A0 poster for the Barcelona Declaration conference
 .nojekyll           tells GitHub Pages to serve the Markdown files as they are
 ```
 
