@@ -303,10 +303,13 @@ We hebben dit samen gebouwd, en het wordt alleen beter als we het samen blijven 
 | Acknowledgements (namen, rollen, ORCID iD's) | https://surf-ori.github.io/pid2portal-project/#acknowledgements |
 
 **Headers (Better metadata, better decisions)**
-- Blog / nieuwsbrief, 1600 × 900: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg
-- LinkedIn / Bluesky / link-preview, 1200 × 630: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg
-- Mobiel staand, feed (LinkedIn, Instagram), 1080 × 1350: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1350.jpg
-- Mobiel staand, stories, 1080 × 1920: https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1920.jpg
+
+| Voorbeeld | Gebruik | Formaat | Link |
+|---|---|---|---|
+| <a href="https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg"><img src="../assets/img/comms/header-1600x900.jpg" width="220" alt="Header 1600 × 900"></a> | Blog / nieuwsbrief | 1600 × 900 | https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1600x900.jpg |
+| <a href="https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg"><img src="../assets/img/comms/header-1200x630.jpg" width="220" alt="Header 1200 × 630"></a> | LinkedIn / Bluesky / link-preview | 1200 × 630 | https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1200x630.jpg |
+| <a href="https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1350.jpg"><img src="../assets/img/comms/header-1080x1350.jpg" width="120" alt="Header 1080 × 1350"></a> | Mobiel staand, feed (LinkedIn, Instagram) | 1080 × 1350 | https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1350.jpg |
+| <a href="https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1920.jpg"><img src="../assets/img/comms/header-1080x1920.jpg" width="100" alt="Header 1080 × 1920"></a> | Mobiel staand, stories | 1080 × 1920 | https://surf-ori.github.io/pid2portal-project/assets/img/comms/header-1080x1920.jpg |
 
 **Beeld (alles online, vrij te gebruiken binnen de communicatie)**
 - Dashboard: https://surf-ori.github.io/pid2portal-project/assets/img/ori-dashboard.jpg
