@@ -9,8 +9,6 @@ eyebrow: About the project
 
 PID2Portal (PID to Portal) is a project led by SURF to make progress on the [Open Research Information Agenda](https://www.universiteitenvannederland.nl/files/publications/Open%20Research%20Information%20Agenda%20%28Businesscase%20OKB%29.pdf) of Universities of the Netherlands. It bridges the start of two cornerstone Open Science NL infrastructure projects: **DURF** and **BROCCOLI**.
 
-**Our ambition:** high quality Dutch open research information covering all aspects of the research lifecycle, for independent and responsible research reporting and analytics.
-
 ### Improve open research information monitoring
 
 number: 1

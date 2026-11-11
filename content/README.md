@@ -11,7 +11,7 @@ Each file starts with a short block between `---` lines:
 
 ```
 ---
-layout: cards          # hero | stats | cards | features | media | band | prose
+layout: cards          # hero | stats | statement | cards | features | timeline | media | band | prose
 id: monitoring         # anchor, so you can link to #monitoring
 nav: ORI monitoring    # label in the top navigation (leave out to hide)
 eyebrow: Objective 1   # small orange label above the heading
@@ -38,6 +38,8 @@ The hero also takes `image`, `image2`, `image-alt` and `image2-alt`.
 - A list in which every item is only a link becomes a row of buttons. The first one is the main button.
 - A line with only a `video.edu.nl/w/...` link becomes an embedded video.
 - In `stats`, write each item as `- **number** label`.
+- In `timeline`, write each item as `- **Sep 2025** what happened`; the dates become coloured pills on a line.
+- `statement` shows the `eyebrow` as a label between two lines and the first paragraph as one big statement on purple.
 
 ## Preview locally
 

@@ -1,6 +1,6 @@
 # ORI Quality Monitor poster
 
-Poster for the [Barcelona Declaration conference](https://barcelona-declaration.org/conference_2026_berlin_programme/), Berlin, 24–25 November 2026: *"Where do PIDs actually break? ORI Quality Monitoring: lessons from monitoring and improving the quality of Dutch open research information"*. A0 portrait (841 × 1189 mm), in the SURF Design System. It follows the submitted proposal and focuses on the ORI dashboard.
+Poster for the [Barcelona Declaration conference](https://barcelona-declaration.org/conference_2026_berlin_programme/), Berlin, 24–25 November 2026: *"Where do PIDs actually break? ORI Quality Monitoring: lessons from monitoring and improving the quality of Dutch open research information"*. A0 portrait (841 × 1189 mm), in the SURF Design System, with compositions from the SURF presentation template (cover blocks, ambition slide, process chevrons, coloured tiles, timeline, closing panel). It follows the submitted proposal and focuses on the ORI dashboard.
 
 - `index.html`: the poster. Online at https://surf-ori.github.io/pid2portal-project/poster/
 - `ori-monitor-poster-A0.pdf`: print-ready export of the current version.
