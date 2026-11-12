@@ -9,6 +9,9 @@ eyebrow: Open research information as a commons
 
 Open research information is the metadata about our publications, datasets, software, people, organisations, projects and funding, spread across CRIS systems, repositories, OpenAlex, OpenAIRE and Crossref. No single institution owns it. Every institution contributes to it, and every institution depends on it: for open access monitoring, for strategic analyses, for research assessment. That makes it a **shared resource**, a commons.
 
+<details class="more">
+<summary>Why a commons, and what PID2Portal set in motion</summary>
+
 > Naming the shared resource is the first step in organising a commons. A commons only stays healthy when the community that uses it also takes care of it: agreeing what good looks like, measuring it in the open, and each doing their part to improve it at the source.
 
 That is what PID2Portal set in motion for open research information:
@@ -22,3 +25,5 @@ For the Netherlands Research Portal, the DURF project now organises this as a re
 
 - [Read: Organizing Research as a Commons](https://doi.org/10.5281/zenodo.21526773)
 - [The DURF position paper](https://durf-project.github.io/position-paper/)
+
+</details>

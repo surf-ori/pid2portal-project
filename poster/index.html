@@ -66,7 +66,7 @@
   .bar-title small { display: block; font: 600 20pt/1.3 var(--font-body); color: #3a3a3a; margin-top: 3mm; letter-spacing: 0; }
 
   /* ---------- 1. cover: title + composition of rounded blocks ---------- */
-  .cover { position: relative; padding: 22mm var(--pad) 14mm; display: grid; grid-template-columns: 1fr 330mm; gap: 12mm; align-items: center; }
+  .cover { position: relative; padding: 18mm var(--pad) 10mm; display: grid; grid-template-columns: 1fr 330mm; gap: 12mm; align-items: center; }
   .eyebrow { font: 700 22pt/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--orange); margin-bottom: 7mm; }
   .cover h1 { font-size: 96pt; font-weight: 900; line-height: .98; }
   .cover h1 .accent { color: var(--orange); }
@@ -74,14 +74,14 @@
   .authors { font-size: 22pt; margin-top: 9mm; color: #3a3a3a; }
   .authors strong { color: #000; }
   .cover .logo { width: 52mm; margin-top: 6mm; display: block; }
-  .collage { position: relative; height: 140mm; }
+  .collage { position: relative; height: 115mm; }
   .collage > * { position: absolute; border-radius: 9mm; }
   .collage .b-orange { left: 0; top: 4mm; width: 110mm; height: 70mm; background: var(--orange); }
   .collage .b-yellow { right: 8mm; top: 0; width: 90mm; height: 45mm; background: var(--yellow); }
   .collage .b-green  { left: 22mm; bottom: 0; width: 100mm; height: 30mm; background: var(--green); }
   .collage .b-peach  { right: 0; bottom: 0; width: 60mm; height: 70mm; background: var(--peach); }
   .collage .b-blue   { right: 40mm; bottom: 5mm; width: 50mm; height: 40mm; border: 2mm solid var(--blue); background: transparent; }
-  .collage .shot { left: 34mm; top: 18mm; width: 250mm; height: 112mm; overflow: hidden; border: 2.5mm solid #000; background: #fff; }
+  .collage .shot { left: 34mm; top: 14mm; width: 240mm; height: 92mm; overflow: hidden; border: 2.5mm solid #000; background: #fff; }
   .collage .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
 
   /* ---------- 2. ambition (template: purple ambition slide) ---------- */
@@ -93,18 +93,24 @@
 
   .chain { display: flex; justify-content: center; align-items: center; gap: 6mm; margin-top: 8mm; flex-wrap: wrap; }
   .chain span { background: #fff; color: var(--purple); font: 800 22pt/1.1 var(--font-display); padding: 5mm 8mm; border-radius: 4mm; }
+  .ambition .commons { margin: 7mm auto 0; font: 600 24pt/1.3 var(--font-body); color: #fff; opacity: 1; }
+  .ambition .commons b { color: var(--yellow); font-family: var(--font-display); font-weight: 800; }
   .chain i { font: 900 30pt/1 var(--font-display); font-style: normal; color: var(--yellow); }
   .signatories { padding: 12mm var(--pad) 0; display: grid; grid-template-columns: 1fr 1.05fr; gap: 8mm var(--gap); align-items: start; }
   .sig-strip { grid-column: 1 / -1; }
-  .strip .arrow { height: 30mm; font-size: 24pt; }
+  .strip .arrow { height: 24mm; font-size: 22pt; }
   .strip .arrow img { width: 18mm; height: 18mm; }
-  .signatories p { font-size: 21pt; line-height: 1.38; }
+  .signatories p { font-size: 19pt; line-height: 1.35; }
   .signatories .bar-title { margin-bottom: 6mm; }
-  .members { list-style: none; margin: 0 0 3mm; padding: 0; display: flex; flex-wrap: wrap; gap: 3mm; }
-  .members li { font: 700 16pt/1 var(--font-body); padding: 3.5mm 5mm; border-radius: 99mm; background: var(--peach); }
-  .members li:nth-child(4n+2) { background: var(--yellow); }
-  .members li:nth-child(4n+3) { background: #d6e9f5; }
-  .members li:nth-child(4n+4) { background: #d4ecdd; }
+  .members { list-style: none; margin: 0 0 2mm; padding: 0; display: flex; flex-wrap: wrap; gap: 2.2mm; }
+  .members li { font: 700 14pt/1 var(--font-body); padding: 2.6mm 4mm; border-radius: 99mm; background: var(--peach); }
+  .members .m-uni, .legend .m-uni::before { background: var(--peach); }
+  .members .m-hbo, .legend .m-hbo::before { background: var(--yellow); }
+  .members .m-umc, .legend .m-umc::before { background: #d6e9f5; }
+  .members .m-oth, .legend .m-oth::before { background: #d4ecdd; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6mm; margin: 0 0 2mm; font-size: 14pt; color: #3a3a3a; }
+  .legend span { display: inline-flex; align-items: center; gap: 2mm; }
+  .legend span::before { content: ""; width: 6mm; height: 6mm; border-radius: 99mm; }
   .note { font-size: 14pt; color: #3a3a3a; }
   .why { display: block; color: #b85b00; font-size: 19pt; }
 
@@ -130,11 +136,11 @@
 
   /* ---------- 4. four questions on a peach panel ---------- */
   .dims { margin: 10mm var(--pad) 0; padding: 10mm 12mm 12mm; background: var(--peach); border-radius: 12mm; flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
-  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1.25fr 1fr; gap: 9mm 12mm; flex: 1 1 0; min-height: 0; }
-  .dim { display: flex; flex-direction: column; min-height: 0; background: #fff; border-radius: 9mm; padding: 6mm 7mm 7mm; }
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1.15fr 1fr; gap: 9mm 12mm; flex: 1 1 0; min-height: 0; }
+  .dim { display: flex; flex-direction: column; min-height: 0; background: #fff; border-radius: 9mm; padding: 5mm 6mm 5mm; }
   .dim-head { display: flex; gap: 5mm; align-items: center; }
-  .chip { flex: none; width: 30mm; height: 30mm; border-radius: 6mm; display: grid; place-items: center; }
-  .chip img { width: 22mm; height: 22mm; filter: invert(1); }
+  .chip { flex: none; width: 24mm; height: 24mm; border-radius: 6mm; display: grid; place-items: center; }
+  .chip img { width: 18mm; height: 18mm; filter: invert(1); }
   .dim:nth-child(1) .chip { background: var(--orange); }
   .dim:nth-child(2) .chip { background: var(--yellow); } .dim:nth-child(2) .chip img { filter: none; }
   .dim:nth-child(3) .chip { background: var(--blue); }
@@ -148,7 +154,7 @@
   /* ---------- 5. from gap to action ---------- */
   .action { padding: 12mm var(--pad) 0; }
   .action .bar-title { margin-bottom: 7mm; }
-  .action-grid { display: grid; grid-template-columns: 0.95fr 1fr 0.8fr; gap: 9mm; align-items: stretch; }
+  .action-grid { display: grid; grid-template-columns: 0.75fr 1fr 0.8fr; gap: 9mm; align-items: stretch; }
   .act-card { background: #f5f5f5; border-radius: 9mm; padding: 7mm 8mm; display: flex; flex-direction: column; }
   .kicker { font: 700 16pt/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: #3a3a3a; margin-bottom: 4mm; }
   .act-shot { margin: 0; background: #fff; border-radius: 5mm; overflow: hidden; }
@@ -197,7 +203,7 @@
 
   /* ---------- 7. closing panel (template: "Thank you" on yellow) ---------- */
   .foot { margin-top: 10mm; background: var(--yellow); padding: 8mm var(--pad); display: grid; grid-template-columns: auto 1fr auto; gap: 14mm; align-items: center; }
-  .qr { width: 78mm; text-align: center; }
+  .qr { width: 64mm; text-align: center; }
   .qr img { display: block; width: 100%; background: #fff; border-radius: 6mm; padding: 4mm; }
   .qr span { display: block; font: 800 18pt/1.2 var(--font-display); margin-top: 3mm; }
   .foot h2 { font-size: 42pt; line-height: 1.05; }
@@ -246,6 +252,7 @@
     <div class="chain">
       <span>Better metadata</span><i aria-hidden="true">→</i><span>Reliable open research information</span><i aria-hidden="true">→</i><span>Trustworthy analyses and reporting</span>
     </div>
+    <p class="commons"><b>Open research information as a commons:</b> a shared resource we take care of together</p>
   </section>
 
   <!-- ===== 2b. THE SIGNATORIES ===== -->
@@ -256,25 +263,26 @@
     </div>
     <div>
       <ul class="members">
-        <li>University of Amsterdam</li>
-        <li>Maastricht University</li>
-        <li>University of Groningen</li>
-        <li>Hanze University of Applied Sciences Groningen</li>
-        <li>Amsterdam University of Applied Sciences</li>
-        <li>Vrije Universiteit Amsterdam</li>
-        <li>University of Twente</li>
-        <li>Protestant Theological University</li>
-        <li>Amsterdam UMC, location VUmc</li>
-        <li>Eindhoven University of Technology</li>
-        <li>Utrecht University</li>
-        <li>Open University</li>
-        <li>Amsterdam UMC, location AMC</li>
-        <li>Erasmus University Rotterdam</li>
-        <li>NHTV Breda University of Applied Sciences</li>
-        <li>Royal Netherlands Academy of Arts and Sciences</li>
-        <li>University of Humanistic Studies</li>
-        <li>Tilburg University</li>
+        <li class="m-uni">University of Amsterdam</li>
+        <li class="m-uni">Vrije Universiteit Amsterdam</li>
+        <li class="m-uni">Utrecht University</li>
+        <li class="m-uni">University of Groningen</li>
+        <li class="m-uni">Maastricht University</li>
+        <li class="m-uni">Erasmus University Rotterdam</li>
+        <li class="m-uni">Tilburg University</li>
+        <li class="m-uni">University of Twente</li>
+        <li class="m-uni">Eindhoven University of Technology</li>
+        <li class="m-uni">Open University</li>
+        <li class="m-uni">Protestant Theological University</li>
+        <li class="m-uni">University of Humanistic Studies</li>
+        <li class="m-hbo">Amsterdam University of Applied Sciences</li>
+        <li class="m-hbo">Hanze University of Applied Sciences Groningen</li>
+        <li class="m-hbo">NHTV Breda University of Applied Sciences</li>
+        <li class="m-umc">Amsterdam UMC, location AMC</li>
+        <li class="m-umc">Amsterdam UMC, location VUmc</li>
+        <li class="m-oth">Royal Netherlands Academy of Arts and Sciences</li>
       </ul>
+      <p class="legend"><span class="m-uni">University</span><span class="m-hbo">University of applied sciences</span><span class="m-umc">University medical centre</span><span class="m-oth">Research organisation</span></p>
       <p class="note">The 18 organisations taking part in the ORI dashboard (ori-dashboard.surf.nl, November 2026)</p>
     </div>
     <div class="sig-strip">
@@ -299,7 +307,7 @@
       <div class="dim">
         <div class="dim-head"><span class="chip"><img src="../assets/icons/research-17.svg" alt=""></span><div><span class="kicker">Completeness</span><h3>Can we link output to people and places?</h3></div></div>
         <p><b class="why">So analyses per researcher, group or partner hold up.</b></p>
-        <figure class="shot-frame"><img src="../assets/img/dashboard/live-completeness.jpg" alt="Completeness tab: share of records per metadata field"></figure>
+        <figure class="shot-frame"><img src="../assets/img/dashboard/live-completeness-row.jpg" alt="Completeness tab: share of records per metadata field"></figure>
       </div>
       <div class="dim">
         <div class="dim-head"><span class="chip"><img src="../assets/icons/data-02.svg" alt=""></span><div><span class="kicker">Enrichment</span><h3>What can other sources fill in?</h3></div></div>
